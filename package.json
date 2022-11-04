@@ -9,6 +9,7 @@
   "author": "Prince Anumba",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.6.1",
     "sass": "^1.56.0"
   }
 }
