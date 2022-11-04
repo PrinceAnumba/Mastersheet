@@ -1,0 +1,14 @@
+{
+  "name": "mastersheet",
+  "version": "1.0.0",
+  "description": "school management system",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "sass -w css/main.scss css/main.css"
+  },
+  "author": "Prince Anumba",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.56.0"
+  }
+}
