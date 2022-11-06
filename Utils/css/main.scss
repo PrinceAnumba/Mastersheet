@@ -44,83 +44,159 @@ nav {
 
     }
 
-    .navbar {
-            padding: 1rem;
-            position: relative;
-            flex-direction: column;
-            align-items: flex-start;
-            
-            .user {
-                margin-top: 40px;
-                img{
-                    height: 50px;
-                }
-            }
-            .top-nav {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                
-                .logo {
-                    margin-right: 130px;
-                }
-
-                i {
-                    color: white;
-                }
-
-                .toggle-icon {
-                    color: white;
-                }
-
-                img {
-                    height: 50px;
-                }
-            }
-
-            .menu-list {
-                margin-top: 4rem;
-                border-radius: 10px;
-                display: flex;
+    .wrap {
+        width: 100%;
+        .navbar {
+                // padding: 1rem;
+                position: relative;
                 flex-direction: column;
-                width: 100%;
-
-                a {
-
-                    &:hover {
-                        background: #46DB6E;
-                        border-radius: 10px;
+                align-items: flex-start;
+        
+                .user {
+                    padding: 1rem;
+                    margin-top: 1rem;
+                    display: flex;
+                    flex-direction: column;
+        
+                    img {
+                        height: 50px;
+                        transition: 0.2s linear;
                     }
 
-                    i {
-                        margin-right: 0px;
+                    span {
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                        transition: 0.2s linear;
                     }
 
-            
+                    p {
+                        color: #fff;
+                        font-size: 12px;
+                        transition: 0.2s linear;
+                    }
+
+                    .nai {
+                        visibility: hidden;
+                    }
+        
+                }
+        
+        
+        
+        
+                .top-nav {
+                    width: 100%;
                     display: flex;
                     align-items: center;
-                    padding: 1rem;
-                    color: #fff;
-                    text-decoration: none;
-                    overflow: hidden;
-                    font-weight: 500;
+                    justify-content: space-between;
+        
+                    .logo {
+                        display: flex;
+                        justify-content: center;
+                        align-content: space-between;
+                        margin-right: 130px;
+                        margin-left: 0.7rem;
+                        margin-top: 1rem;
+               
+                    }
+        
+                    i {
+                        color: white;
+                        margin-top: 1rem;
+                        margin-right: 1rem;
+                    }
+
+        
+                    .toggle-icon {
+                        color: white;
+                    }
+        
+                    img {
+                        height: 50px;
+                        transition: 0.2s linear;
+                    }
+                }
+        
+                .menu-list {
+                    position: absolute;
+                    top: 25vh;
+                    display: flex;
+                    flex-direction: column;
+                    width: 290px;
+
+                    .active {
+                        background: #46DB6E;
+                    }
+        
+                    a {
+                        
+        
+                        &:hover {
+                            background: #46DB6E;
+                        }
+        
+                        i {
+                            padding-top: 0.8rem;
+                            margin-left: 1.6rem;
+                        }
+        
+                        p {
+                            margin-left: 1rem;
+                        }
+        
+                        .nai {
+                            visibility: hidden;
+        
+                        }
+        
+                        display: flex;
+                        align-items: baseline;
+                        padding: 0.2rem;
+                        color: #fff;
+                        text-decoration: none;
+                        overflow: hidden;
+                        font-weight: 500;
+                    }
                 }
             }
-     }
+        
+            .logout {
+                position: absolute;
+                margin-top: 90vh;
+        
+                a {
+                    display: flex;
+                    align-items: baseline;
+                    color: #fff;
+                    width: 290px;
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 18px;
+                    transition: 0.5s ease-in-out;
 
-     .logout {
-        margin-top: 150px;
-        margin-left: 15px;
-        a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
+                    i {
+                        margin-left: 1.5rem;
+                        padding-top: 1rem;
+                    }
 
-            &:hover {
-
-            }
-        }
+                    &:hover {
+                        background: #b83018;
+                    }
+        
+                    .nai {
+                        visibility: hidden;
+        
+        
+                    }
+        
+                    &:hover {}
+                }
+        
+                p {
+                    margin-left: 1rem;
+                }
+    }
 }
 
 
