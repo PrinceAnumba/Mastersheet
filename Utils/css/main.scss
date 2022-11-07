@@ -20,184 +20,246 @@
 }
 
 body {
-    background: linear-gradient(90deg, #217A39, #023E12);;
-}
-
-nav {
-    width: 80px;
-    height: 100vh;
-    background: #34A853;
-    transition: 0.2s linear;
-    overflow: hidden;
-
-    &:hover {
-        width: 290px;
-        nav {
-            .navbar{
-                .menu-list {
-                    p {
-                        display: none;
-                    }
-                }
-            } 
+    background: $background-gradient;
+    display: flex;
+    
+    .left-gap {
+            height: 100vh;
+            width: 180px;
+            transition: 0.2s linear;
         }
-
-    }
-
-    .wrap {
-        width: 100%;
-        .navbar {
-                // padding: 1rem;
-                position: relative;
-                flex-direction: column;
-                align-items: flex-start;
-        
-                .user {
-                    padding: 1rem;
-                    margin-top: 1rem;
-                    display: flex;
-                    flex-direction: column;
-        
-                    img {
-                        height: 50px;
-                        transition: 0.2s linear;
+    
+        nav {
+            width: 80px;
+            height: 100vh;
+            background: #34A853;
+            transition: 0.2s linear;
+            overflow: hidden;
+            position: fixed;
+            left: 60px;
+    
+            &:hover {
+                width: 290px;
+    
+                nav {
+                    .navbar {
+                        .menu-list {
+                            p {
+                                display: none;
+                            }
+                        }
                     }
-
-                    span {
-                        color: #fff;
-                        font-size: 16px;
-                        font-weight: 500;
-                        transition: 0.2s linear;
-                    }
-
-                    p {
-                        color: #fff;
-                        font-size: 12px;
-                        transition: 0.2s linear;
-                    }
-
-                    .nai {
-                        visibility: hidden;
-                    }
-        
                 }
-        
-        
-        
-        
-                .top-nav {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-        
-                    .logo {
+    
+            }
+    
+            .wrap {
+                width: 100%;
+    
+                .navbar {
+                    // padding: 1rem;
+                    position: relative;
+                    flex-direction: column;
+                    align-items: flex-start;
+    
+                    .user {
+                        padding: 1rem;
+                        margin-top: 1rem;
                         display: flex;
-                        justify-content: center;
-                        align-content: space-between;
-                        margin-right: 130px;
-                        margin-left: 0.7rem;
-                        margin-top: 1rem;
-               
-                    }
-        
-                    i {
-                        color: white;
-                        margin-top: 1rem;
-                        margin-right: 1rem;
-                    }
-
-        
-                    .toggle-icon {
-                        color: white;
-                    }
-        
-                    img {
-                        height: 50px;
-                        transition: 0.2s linear;
-                    }
-                }
-        
-                .menu-list {
-                    position: absolute;
-                    top: 25vh;
-                    display: flex;
-                    flex-direction: column;
-                    width: 290px;
-
-                    .active {
-                        background: #46DB6E;
-                    }
-        
-                    a {
-                        
-        
-                        &:hover {
-                            background: #46DB6E;
+                        flex-direction: column;
+    
+                        img {
+                            height: 50px;
+                            transition: 0.2s linear;
                         }
-        
-                        i {
-                            padding-top: 0.8rem;
-                            margin-left: 1.6rem;
+    
+                        span {
+                            color: $Body-text;
+                            font-size: 16px;
+                            font-weight: 500;
+                            transition: 0.2s linear;
                         }
-        
+    
                         p {
-                            margin-left: 1rem;
+                            color: $Body-text;
+                            font-size: 12px;
+                            transition: 0.2s linear;
                         }
-        
+    
                         .nai {
                             visibility: hidden;
-        
                         }
-        
+    
+                    }
+    
+    
+    
+    
+                    .top-nav {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+    
+                        .logo {
+                            display: flex;
+                            justify-content: center;
+                            align-content: space-between;
+                            margin-right: 130px;
+                            margin-left: 0.7rem;
+                            margin-top: 1rem;
+    
+                        }
+    
+                        i {
+                            color: $Body-text;
+                            margin-top: 1rem;
+                            margin-right: 1rem;
+                        }
+    
+    
+                        .toggle-icon {
+                            color: $Body-text;
+                        }
+    
+                        img {
+                            height: 50px;
+                            transition: 0.2s linear;
+                        }
+                    }
+    
+                    .menu-list {
+                        position: absolute;
+                        top: 25vh;
+                        display: flex;
+                        flex-direction: column;
+                        width: 290px;
+    
+                        .active {
+                            background: $selected-menu;
+                        }
+    
+                        a {
+    
+    
+                            &:hover {
+                                background: $selected-menu;
+                            }
+    
+                            i {
+                                padding-top: 0.8rem;
+                                margin-left: 1.6rem;
+                            }
+    
+                            p {
+                                margin-left: 1rem;
+                            }
+    
+                            .nai {
+                                visibility: hidden;
+    
+                            }
+    
+                            display: flex;
+                            align-items: baseline;
+                            padding: 0.2rem;
+                            color: $Body-text;
+                            text-decoration: none;
+                            overflow: hidden;
+                            font-weight: 500;
+                        }
+                    }
+                }
+    
+                .logout {
+                    position: absolute;
+                    margin-top: 90vh;
+    
+                    a {
                         display: flex;
                         align-items: baseline;
-                        padding: 0.2rem;
-                        color: #fff;
+                        color: $Body-text;
+                        width: 290px;
                         text-decoration: none;
-                        overflow: hidden;
                         font-weight: 500;
+                        font-size: 18px;
+                        transition: 0.5s ease-in-out;
+    
+                        i {
+                            margin-left: 1.5rem;
+                            padding-top: 1rem;
+                        }
+    
+                        &:hover {
+                            background: $red;
+                        }
+    
+                        .nai {
+                            visibility: hidden;
+    
+    
+                        }
+    
+                        &:hover {}
+                    }
+    
+                    p {
+                        margin-left: 1rem;
                     }
                 }
             }
-        
-            .logout {
-                position: absolute;
-                margin-top: 90vh;
-        
-                a {
+    
+    
+        }
+    .main {
+        width: 100%;
+
+        .content {
+            margin-top: 2rem;
+
+            .top {
+                background-color: $white;
+                display: flex;
+                flex-direction: column;
+                .first-col {
+                    margin: 2rem 3rem 0 3rem;
                     display: flex;
-                    align-items: baseline;
-                    color: #fff;
-                    width: 290px;
-                    text-decoration: none;
-                    font-weight: 500;
-                    font-size: 18px;
-                    transition: 0.5s ease-in-out;
+                    justify-content: space-between;
 
-                    i {
-                        margin-left: 1.5rem;
-                        padding-top: 1rem;
+                    .wlc-btn{
+                        padding: 0.5rem;
+                        color: $Body-text;
+                        background-color: $hero-header;
                     }
-
-                    &:hover {
-                        background: #b83018;
+                    img {
+                        height: 50px;
                     }
-        
-                    .nai {
-                        visibility: hidden;
-        
-        
-                    }
-        
-                    &:hover {}
                 }
-        
-                p {
-                    margin-left: 1rem;
+                .second-col {
+                    margin: 1rem 3rem 1rem 3rem;
+                    overflow: hidden;
+                    height: 200px;
+                    img {
+                        width: 100%;
+                        height: 300px;
+                        object-fit: cover;
+                        
+                    }
                 }
+                .third-col {
+                    margin: 1rem 3rem 2rem 3rem;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    justify-content: center;
+                    .box-card {
+                        height: 156px;
+                        width: 232px;
+                        border: 2px solid #A6A6A6;
+                    }
+                }
+            }
+        }
     }
 }
 
-
-}
