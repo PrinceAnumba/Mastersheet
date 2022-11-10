@@ -303,7 +303,7 @@ body .main .content .top .first-col {
   justify-content: space-between;
 }
 body .main .content .top .first-col .wlc-btn {
-  padding: 0.5rem;
+  padding: 0.2rem 0.5rem;
   color: #fff;
   background-color: #222A49;
 }
@@ -317,7 +317,7 @@ body .main .content .top .second-col {
 }
 body .main .content .top .second-col img {
   width: 100%;
-  height: 300px;
+  height: 190px;
   -o-object-fit: cover;
      object-fit: cover;
 }
