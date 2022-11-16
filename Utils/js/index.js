@@ -19,6 +19,8 @@ $("nav").hover(function() {
   $("nav .navbar .menu-list a p").show();
   $("nav .navbar .menu-list a").css("justify-content","left");
   $("nav .navbar .menu-list a i").css("padding-left","1rem");
+  $("nav .navbar .menu-list a i").css("padding-top","0rem");
+  $("nav .navbar .menu-list a i").css("padding-bottom","0rem");
   $("nav .wrap .navbar .user .name").removeClass("nai");
   $("nav .wrap .navbar .user .position").removeClass("nai");
   $("nav .logout a p").removeClass("nai");
