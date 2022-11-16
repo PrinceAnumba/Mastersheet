@@ -16,7 +16,9 @@ $("nav").hover(function() {
   $("nav .wrap .navbar .user").css("align-items","center");
   $("nav .navbar .top-nav img").css("height","25px");
   $("nav .navbar .user img").addClass("text-center");
-  $("nav .navbar .menu-list a p").removeClass("nai")
+  $("nav .navbar .menu-list a p").show();
+  $("nav .navbar .menu-list a").css("justify-content","left");
+  $("nav .navbar .menu-list a i").css("padding-left","1rem");
   $("nav .wrap .navbar .user .name").removeClass("nai");
   $("nav .wrap .navbar .user .position").removeClass("nai");
   $("nav .logout a p").removeClass("nai");
@@ -30,7 +32,11 @@ $("nav").mouseleave(function() {
   $("nav .wrap .navbar .top-nav .logo").css("margin-right","130px");
   $("nav .navbar .top-nav img").css("height","50px");
   $("nav .navbar .user img").css("height","50px");
-  $("nav .navbar .menu-list a p").addClass("nai");
+  $("nav .navbar .menu-list a p").hide();
+  $("nav .navbar .menu-list a i").css("padding-left","0");
+  $("nav .navbar .menu-list a").css("justify-content","center");
+  $("nav .navbar .menu-list a i").css("padding-top","0.7rem");
+  $("nav .navbar .menu-list a i").css("padding-bottom","0.7rem");
   $("nav .logout a p").addClass("nai");
   $("nav .wrap .navbar .user .name").addClass("nai");
   $("nav .wrap .navbar .user .position").addClass("nai");

@@ -150,13 +150,13 @@ body {
 body .left-gap {
   height: 100vh;
   width: 180px;
-  transition: 0.2s linear;
+  transition: 250ms ease-in-out;
 }
 body nav {
   width: 80px;
   height: 100vh;
   background: #34A853;
-  transition: 0.2s linear;
+  transition: 250ms ease-in-out;
   overflow: hidden;
   position: fixed;
   left: 60px;
@@ -183,18 +183,18 @@ body nav .wrap .navbar .user {
 }
 body nav .wrap .navbar .user img {
   height: 50px;
-  transition: 0.2s linear;
+  transition: 250ms ease-in-out;
 }
 body nav .wrap .navbar .user span {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  transition: 0.2s linear;
+  transition: 250ms ease-in-out;
 }
 body nav .wrap .navbar .user p {
   color: #fff;
   font-size: 12px;
-  transition: 0.2s linear;
+  transition: 250ms ease-in-out;
 }
 body nav .wrap .navbar .user .nai {
   visibility: hidden;
@@ -208,10 +208,9 @@ body nav .wrap .navbar .top-nav {
 body nav .wrap .navbar .top-nav .logo {
   display: flex;
   justify-content: center;
-  align-content: space-between;
+  align-content: center;
   margin-right: 130px;
-  margin-left: 0.7rem;
-  margin-top: 1rem;
+  padding: 1rem;
 }
 body nav .wrap .navbar .top-nav i {
   color: #fff;
@@ -223,19 +222,22 @@ body nav .wrap .navbar .top-nav .toggle-icon {
 }
 body nav .wrap .navbar .top-nav img {
   height: 50px;
-  transition: 0.2s linear;
+  transition: 250ms ease-in-out;
 }
 body nav .wrap .navbar .menu-list {
   position: absolute;
   top: 25vh;
   display: flex;
   flex-direction: column;
-  width: 290px;
+  justify-content: center;
+  width: 100%;
 }
 body nav .wrap .navbar .menu-list .active {
   background: #46DB6E;
 }
 body nav .wrap .navbar .menu-list a {
+  display: flex;
+  justify-content: center;
   display: flex;
   align-items: baseline;
   padding: 0.2rem;
@@ -248,14 +250,13 @@ body nav .wrap .navbar .menu-list a:hover {
   background: #46DB6E;
 }
 body nav .wrap .navbar .menu-list a i {
-  padding-top: 0.8rem;
-  margin-left: 1.6rem;
+  padding: 0.7rem 0;
 }
 body nav .wrap .navbar .menu-list a p {
   margin-left: 1rem;
 }
 body nav .wrap .navbar .menu-list a .nai {
-  visibility: hidden;
+  display: none;
 }
 body nav .wrap .logout {
   position: absolute;
@@ -269,10 +270,10 @@ body nav .wrap .logout a {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
-  transition: 0.5s ease-in-out;
+  transition: 250ms ease-in-out;
 }
 body nav .wrap .logout a i {
-  margin-left: 1.5rem;
+  margin-left: 1.8rem;
   padding-top: 1rem;
 }
 body nav .wrap .logout a:hover {
@@ -344,6 +345,9 @@ body .main .content .bg .top .right .btn span {
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
+}
+body .main .content .bg .top .right .btn:hover {
+  background-color: #46DB6E;
 }
 body .main .content .bg .top .right .search {
   background-color: #fff;

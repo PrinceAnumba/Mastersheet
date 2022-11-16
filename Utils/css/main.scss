@@ -26,14 +26,14 @@ body {
     .left-gap {
             height: 100vh;
             width: 180px;
-            transition: 0.2s linear;
+            transition: 250ms ease-in-out;
         }
     
         nav {
             width: 80px;
             height: 100vh;
             background: #34A853;
-            transition: 0.2s linear;
+            transition: 250ms ease-in-out;
             overflow: hidden;
             position: fixed;
             left: 60px;
@@ -70,20 +70,20 @@ body {
     
                         img {
                             height: 50px;
-                            transition: 0.2s linear;
+                            transition: 250ms ease-in-out;
                         }
     
                         span {
                             color: $Body-text;
                             font-size: 16px;
                             font-weight: 500;
-                            transition: 0.2s linear;
+                            transition: 250ms ease-in-out;
                         }
     
                         p {
                             color: $Body-text;
                             font-size: 12px;
-                            transition: 0.2s linear;
+                            transition: 250ms ease-in-out;
                         }
     
                         .nai {
@@ -104,11 +104,10 @@ body {
                         .logo {
                             display: flex;
                             justify-content: center;
-                            align-content: space-between;
+                            align-content: center;
                             margin-right: 130px;
-                            margin-left: 0.7rem;
-                            margin-top: 1rem;
-    
+                            padding: 1rem;
+                            
                         }
     
                         i {
@@ -124,7 +123,7 @@ body {
     
                         img {
                             height: 50px;
-                            transition: 0.2s linear;
+                            transition: 250ms ease-in-out;
                         }
                     }
     
@@ -133,22 +132,27 @@ body {
                         top: 25vh;
                         display: flex;
                         flex-direction: column;
-                        width: 290px;
+                        justify-content: center;
+                        width: 100%;
     
                         .active {
                             background: $selected-menu;
                         }
     
                         a {
-    
+                            display: flex;
+                            justify-content: center;
+                            
+
     
                             &:hover {
                                 background: $selected-menu;
                             }
     
                             i {
-                                padding-top: 0.8rem;
-                                margin-left: 1.6rem;
+                                // display: flex;
+                                // justify-content: baseline;
+                                padding: 0.7rem 0;
                             }
     
                             p {
@@ -156,7 +160,7 @@ body {
                             }
     
                             .nai {
-                                visibility: hidden;
+                               display: none;
     
                             }
     
@@ -183,10 +187,10 @@ body {
                         text-decoration: none;
                         font-weight: 500;
                         font-size: 18px;
-                        transition: 0.5s ease-in-out;
+                        transition: 250ms ease-in-out;
     
                         i {
-                            margin-left: 1.5rem;
+                            margin-left: 1.8rem;
                             padding-top: 1rem;
                         }
     
@@ -279,6 +283,10 @@ body {
                                 color: $white;
                                 text-transform: uppercase;
                                 font-weight: 700;
+                            }
+
+                            &:hover {
+                                background-color: $selected-menu;
                             }
                         }
 
