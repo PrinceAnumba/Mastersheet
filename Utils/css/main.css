@@ -292,6 +292,66 @@ body .main {
 body .main .content {
   margin-top: 2rem;
 }
+body .main .content .cont {
+  background-color: #FFD8D8;
+}
+body .main .content .cont .up {
+  background-color: #FFD8D8;
+}
+body .main .content .cont .up .image-holder {
+  display: none;
+}
+body .main .content .cont .up .image-holder img {
+  height: 300px;
+  margin: 2rem 0 0 2rem;
+}
+body .main .content .cont {
+  background-color: #b2e0bf;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body .main .content .cont .up {
+  display: flex;
+  flex-direction: row;
+  background-color: #b2e0bf;
+  justify-content: space-between;
+}
+body .main .content .cont .up .image-holder {
+  height: 210px;
+  width: 190px;
+  background-color: #34A853;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .main .content .cont .up .inputs {
+  display: flex;
+  flex-direction: column;
+  background-color: #b2e0bf;
+  gap: 15px;
+}
+body .main .content .cont .up .inputs input {
+  border-radius: 20px;
+  height: 30px;
+  width: 950px;
+  padding: 0 20px;
+}
+body .main .content .cont .text-area textarea {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 22px;
+}
+body .main .content .cont .submit button {
+  background: #34A853;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+}
 body .main .content .bg {
   background-color: #F8F8F8;
   width: 100%;

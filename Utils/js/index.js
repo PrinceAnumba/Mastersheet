@@ -8,7 +8,7 @@
 
 $("nav").hover(function() {
   $(".profile_image").attr("src","../Utils/images/MASTERSHEET-White 1.png");
-  $("body .left-gap").css("width","24%");
+  $("body .left-gap").css("width","23%");
   $("body nav").css("left","0px");
   $("nav .wrap .navbar .top-nav .logo").css("margin-right","0px");
   $("nav .wrap .navbar .user").css("width","100%");

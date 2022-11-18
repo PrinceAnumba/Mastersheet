@@ -220,11 +220,89 @@ body {
         overflow: hidden;
         .content {
             margin-top: 2rem;
+
+            // Edit board styles
+            .cont {
+                background-color: #FFD8D8;
+                .up {
+                    background-color: #FFD8D8;
+                    .image-holder {
+                        display: none;
+                        
+                        img {
+                            height: 300px;
+                            margin: 2rem 0 0 2rem;
+
+                        }
+                    }
+                }
+            }
+
+            // New board styles
+            .cont {
+                background-color: #b2e0bf;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .up {
+                    display: flex;
+                    flex-direction: row;
+                    background-color: #b2e0bf;
+                    justify-content: space-between;
+
+                    .image-holder {
+                        height: 210px;
+                        width: 190px;
+                        background-color: #34A853;
+                        color: $white;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .inputs {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #b2e0bf;
+                        gap: 15px;
+
+                        input {
+                            border-radius: 20px;
+                            height: 30px;
+                            width: 950px;
+                            padding: 0 20px;
+                        }
+                    }
+                }
+
+                .text-area {
+                    textarea {
+                        padding: 1rem;
+                        width: 100%;
+                        border-radius: 22px;
+                    }
+                }
+
+                .submit {
+                    button {
+                        background: $green-button;
+                        color: $white;
+                        padding: 0.5rem 1rem;
+                        border-radius: 20px;
+                        font-weight: 700;
+                    }
+                }
+
+
+            }
+
+            // Notification board styles
             .bg {
                 background-color: $bg;
                 width: 100%;
-                padding-bottom: 5rem;
-                
+                padding-bottom: 5rem;   
                 padding-top: 1rem;
                 
 
@@ -304,6 +382,7 @@ body {
                 }
             }
 
+            // index styles
             .top {
                 background-color: $white;
                 display: flex;
