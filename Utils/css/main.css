@@ -146,6 +146,7 @@ table {
 body {
   background: linear-gradient(90deg, #217A39, #023E12);
   display: flex;
+  scroll-behavior: smooth;
 }
 body .left-gap {
   height: 100vh;
@@ -289,21 +290,167 @@ body .main {
   width: 100%;
   overflow: hidden;
 }
+body .main .mastersheet_fee-details {
+  background-color: #F5F5F5;
+  margin: 2rem 0 0 1rem;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_header h2 {
+  color: #222A49;
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+  font-weight: 750;
+  color: #222A49;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons .search {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons .search i {
+  margin: 0 1rem;
+  color: #34A853;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons .notification {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons .notification i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons .setting {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons .setting i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_fields .blue {
+  background-color: #E4D8FF;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_fields .grey {
+  background-color: #FFD8D8;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_fields .cyan {
+  background-color: #D8FFE7;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  margin: 0 1rem;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-item h6 {
+  color: #596181;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-item p {
+  color: #596181;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-component {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-component .fee-item {
+  flex: 1;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_graph {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_graph div {
+  border-radius: 15px;
+}
 body .main .content {
   margin-top: 2rem;
 }
-body .main .content .cont {
+body .main .content .contr {
   background-color: #FFD8D8;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-body .main .content .cont .up {
+body .main .content .contr .upp {
+  display: flex;
+  flex-direction: row;
   background-color: #FFD8D8;
+  justify-content: space-between;
 }
-body .main .content .cont .up .image-holder {
-  display: none;
+body .main .content .contr .upp .image-holde {
+  height: 250px;
+  width: 260px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-body .main .content .cont .up .image-holder img {
-  height: 300px;
-  margin: 2rem 0 0 2rem;
+body .main .content .contr .upp .image-holde img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0.8rem 0 0 1rem;
+}
+body .main .content .contr .upp .input {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFD8D8;
+  gap: 15px;
+}
+body .main .content .contr .upp .input input {
+  border-radius: 20px;
+  height: 30px;
+  width: 950px;
+  padding: 0 20px;
+}
+body .main .content .contr .text-areaa textarea {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 22px;
+}
+body .main .content .contr .submit button {
+  background: #34A853;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
 }
 body .main .content .cont {
   background-color: #b2e0bf;
