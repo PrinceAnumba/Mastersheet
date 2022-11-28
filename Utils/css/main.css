@@ -290,15 +290,410 @@ body .main {
   width: 100%;
   overflow: hidden;
 }
+body .main .mastersheet_school_fee-class-detail {
+  background-color: #F5F5F5;
+  margin: 2rem 0 0 1rem;
+  padding: 2rem 2rem;
+}
+body .main .mastersheet_school_fee-class-detail .blue {
+  background-color: #E4D8FF;
+}
+body .main .mastersheet_school_fee-class-detail .grey {
+  background-color: #FFD8D8;
+}
+body .main .mastersheet_school_fee-class-detail .cyan {
+  background-color: #D8FFE7;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .left {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .left a .back-arrow {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .left a .back-arrow i {
+  position: relative;
+  top: 9%;
+  left: 30%;
+  color: #515151;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .left h2 {
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+  font-weight: 750;
+  color: #222A49;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .search {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .search i {
+  margin: 0 1rem;
+  color: #34A853;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .notification {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .notification i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .setting {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .setting i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .mastersheet_school_fee-class-detail .header {
+  color: #222A49;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .hero-section h4 {
+  color: #222A49;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .hero-section a {
+  text-decoration: none;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section {
+  display: flex;
+  flex-direction: column;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left {
+  flex: 1;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .title {
+  color: #DF142D;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .title h2 {
+  font-weight: bolder;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 2rem;
+  align-items: center;
+  justify-content: center;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row .picture {
+  height: 48px;
+  width: 48px;
+  background-color: #C1BBEB;
+  border-radius: 40px;
+  margin-right: 2rem;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row .student_name {
+  flex: 2;
+  font-size: 20px;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row .student_ID {
+  flex: 2;
+  font-size: 20px;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row a {
+  text-decoration: none;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row a .full-detail-btn {
+  background-color: #34A853;
+  border-radius: 20px;
+  color: #fff;
+  padding: 0.6rem 1rem;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row a .full-detail-btn:hover {
+  background-color: rgb(255, 175, 175);
+  color: #34A853;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right {
+  flex: 1;
+  margin-top: 1rem;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .title {
+  color: #34A853;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .title h2 {
+  font-weight: bolder;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 2rem;
+  align-items: center;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row .picture {
+  height: 48px;
+  width: 48px;
+  background-color: #C1BBEB;
+  border-radius: 40px;
+  margin-right: 2rem;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row .student_name {
+  flex: 2;
+  font-size: 20px;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row .student_ID {
+  flex: 2;
+  font-size: 20px;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row a {
+  text-decoration: none;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row a .full-detail-btn {
+  background-color: #34A853;
+  border-radius: 20px;
+  color: #fff;
+  padding: 0.6rem 1rem;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row a .full-detail-btn:hover {
+  background-color: rgb(255, 175, 175);
+  color: #34A853;
+}
+body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right {
+  flex: 1;
+}
+body .main .mastersheet_school_fee-details {
+  background-color: #F5F5F5;
+  margin: 2rem 0 0 1rem;
+  padding: 2rem 2rem;
+}
+body .main .mastersheet_school_fee-details .blue {
+  background-color: #E4D8FF;
+}
+body .main .mastersheet_school_fee-details .grey {
+  background-color: #FFD8D8;
+}
+body .main .mastersheet_school_fee-details .cyan {
+  background-color: #D8FFE7;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .left {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .left a .back-arrow {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .left a .back-arrow i {
+  position: relative;
+  top: 9%;
+  left: 30%;
+  color: #515151;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .left h2 {
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+  font-weight: 750;
+  color: #222A49;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .search {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .search i {
+  margin: 0 1rem;
+  color: #34A853;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .notification {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .notification i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .setting {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .setting i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .mastersheet_school_fee-details .header {
+  color: #222A49;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .hero-section h4 {
+  color: #222A49;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .hero-section a {
+  text-decoration: none;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section {
+  display: flex;
+  flex-direction: row;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left {
+  flex: 1;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .title {
+  color: #DF142D;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .title h2 {
+  font-weight: bolder;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .data-row {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0;
+  align-items: center;
+  justify-content: center;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .data-row .picture {
+  height: 48px;
+  width: 48px;
+  background-color: #C1BBEB;
+  border-radius: 40px;
+  margin-right: 2rem;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .data-row .student_name {
+  flex: 2;
+  font-size: 20px;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .data-row .student_ID {
+  flex: 2;
+  font-size: 20px;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right {
+  flex: 1;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .title {
+  color: #34A853;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .title h2 {
+  font-weight: bolder;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .data-row {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0;
+  align-items: center;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .data-row .picture {
+  height: 48px;
+  width: 48px;
+  background-color: #C1BBEB;
+  border-radius: 40px;
+  margin-right: 2rem;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .data-row .student_name {
+  flex: 2;
+  font-size: 20px;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .data-row .student_ID {
+  flex: 2;
+  font-size: 20px;
+}
+body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right {
+  flex: 1;
+}
 body .main .mastersheet_fee-details {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
+  padding: 2rem 2rem;
 }
 body .main .mastersheet_fee-details .mastersheet_fee-details_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 2rem;
 }
 body .main .mastersheet_fee-details .mastersheet_fee-details_header h2 {
   color: #222A49;
@@ -365,7 +760,10 @@ body .main .mastersheet_fee-details .mastersheet_fee-details_fields .grey {
 body .main .mastersheet_fee-details .mastersheet_fee-details_fields .cyan {
   background-color: #D8FFE7;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-item {
+body .main .mastersheet_fee-details .mastersheet_fee-details_fields a {
+  text-decoration: none;
+}
+body .main .mastersheet_fee-details .mastersheet_fee-details_fields a .fee-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -374,10 +772,10 @@ body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-item {
   border-radius: 20px;
   margin: 0 1rem;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-item h6 {
+body .main .mastersheet_fee-details .mastersheet_fee-details_fields a .fee-item h6 {
   color: #596181;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-item p {
+body .main .mastersheet_fee-details .mastersheet_fee-details_fields a .fee-item p {
   color: #596181;
 }
 body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-component {
@@ -386,6 +784,13 @@ body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-compone
   flex-direction: row;
 }
 body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-component .fee-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  margin: 0 1rem;
   flex: 1;
 }
 body .main .mastersheet_fee-details .mastersheet_fee-details_graph {
