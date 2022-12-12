@@ -290,6 +290,134 @@ body .main {
   width: 100%;
   overflow: hidden;
 }
+body .main .library_top-nav {
+  background-color: #F5F5F5;
+  margin: 2rem 0 0 1rem;
+  padding: 2rem 2rem;
+}
+body .main .library_top-nav .library_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .library_top-nav .library_header .left {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+body .main .library_top-nav .library_header .left h2 {
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+  font-weight: 750;
+  color: #222A49;
+}
+body .main .library_top-nav .library_header .icons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+body .main .library_top-nav .library_header .icons a {
+  text-decoration: none;
+}
+body .main .library_top-nav .library_header .icons a .add-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #34A853;
+}
+body .main .library_top-nav .library_header .icons a .add-icon i {
+  color: #fff;
+  font-size: 20px;
+}
+body .main .library_top-nav .library_header .icons .search {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+}
+body .main .library_top-nav .library_header .icons .search i {
+  margin: 0 1rem;
+  color: #34A853;
+}
+body .main .library_top-nav .library_header .icons .notification {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .library_top-nav .library_header .icons .notification i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .library_top-nav .library_header .icons .setting {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .library_top-nav .library_header .icons .setting i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .library_top-nav .library_body {
+  padding: 2rem 1rem;
+}
+body .main .library_top-nav .library_body .library_body_suggested {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .main .library_top-nav .library_body .library_body_suggested .header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .main .library_top-nav .library_body .library_body_suggested .header h4 {
+  font-weight: 500;
+  font-size: 32px;
+  color: #475073;
+}
+body .main .library_top-nav .library_body .library_body_suggested .suggested_books {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+body .main .library_top-nav .library_body .library_body_suggested .suggested_books .book {
+  cursor: pointer;
+}
+body .main .library_top-nav .library_body .library_body_suggested .suggested_books .book img {
+  height: 400px;
+}
+body .main .library_top-nav .library_body .library_body_suggested .category-menu {
+  padding-top: 6rem;
+  width: 100%;
+}
+body .main .library_top-nav .library_body .library_body_suggested .category-menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2.3rem;
+}
+body .main .library_top-nav .library_body .library_body_suggested .category-menu ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 28px;
+  color: #34A853;
+}
 body .main .attendance_top-nav {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
@@ -328,6 +456,343 @@ body .main .attendance_top-nav .attendance_header .icons .search {
 body .main .attendance_top-nav .attendance_header .icons .search i {
   margin: 0 1rem;
   color: #34A853;
+}
+body .main .attendance_top-nav .attendance_header .icons .notification {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .attendance_top-nav .attendance_header .icons .notification i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .attendance_top-nav .attendance_header .icons .setting {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .attendance_top-nav .attendance_header .icons .setting i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .attendance_top-nav .attendance_body #calendar {
+  color: #222A49;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+body .main .attendance_class_top-nav {
+  background-color: #F5F5F5;
+  margin: 2rem 0 0 1rem;
+  padding: 2rem 2rem;
+}
+body .main .attendance_class_top-nav .attendance_class_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .attendance_class_top-nav .attendance_class_header .left {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+body .main .attendance_class_top-nav .attendance_class_header .left a .back-arrow {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+body .main .attendance_class_top-nav .attendance_class_header .left a .back-arrow i {
+  position: relative;
+  top: 9%;
+  left: 30%;
+  color: #515151;
+}
+body .main .attendance_class_top-nav .attendance_class_header .left h2 {
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+  font-weight: 750;
+  color: #222A49;
+}
+body .main .attendance_class_top-nav .attendance_class_header .icons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+body .main .attendance_class_top-nav .attendance_class_header .icons .search {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+}
+body .main .attendance_class_top-nav .attendance_class_header .icons .search i {
+  margin: 0 1rem;
+  color: #34A853;
+}
+body .main .attendance_class_top-nav .attendance_class_header .icons .notification {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .attendance_class_top-nav .attendance_class_header .icons .notification i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .attendance_class_top-nav .attendance_class_header .icons .setting {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .attendance_class_top-nav .attendance_class_header .icons .setting i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .attendance_class_top-nav .attendance_class_body {
+  margin-top: 2rem;
+}
+body .main .attendance_class_top-nav .attendance_class_body .date {
+  color: #222A49;
+}
+body .main .attendance_class_top-nav .attendance_class_body .classes {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+body .main .attendance_class_top-nav .attendance_class_body .classes a {
+  text-decoration: none;
+}
+body .main .attendance_class_top-nav .attendance_class_body .classes a .class {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 1rem;
+}
+body .main .attendance_class_top-nav .attendance_class_body .classes a .class h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #222A49;
+}
+body .main .attendance_class_top-nav .attendance_class_body .classes a .class img {
+  height: 120px;
+}
+body .main .attendance_class_top-nav .attendance_class_body .classes .blue {
+  background-color: #D7C5FF;
+}
+body .main .attendance_class_top-nav .attendance_class_body .classes .gold {
+  background-color: #FFC4BC;
+}
+body .main .attendance_class_top-nav .attendance_class_body .classes .cyan {
+  background-color: #EABCFF;
+}
+body .main .attendance_class_students_top-nav {
+  background-color: #F5F5F5;
+  margin: 2rem 0 0 1rem;
+  padding: 2rem 2rem;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_header .left {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_header .left a .back-arrow {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_header .left a .back-arrow i {
+  position: relative;
+  top: 9%;
+  left: 30%;
+  color: #515151;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_header .left h2 {
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+  font-weight: 750;
+  color: #222A49;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_header .icons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_header .icons .search {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_header .icons .search i {
+  margin: 0 1rem;
+  color: #34A853;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_header .icons .notification {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_header .icons .notification i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_header .icons .setting {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_header .icons .setting i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body {
+  margin-top: 2rem;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .date {
+  color: #222A49;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .class {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .class h1 {
+  font-size: 36px;
+  color: #222A49;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .class span {
+  font-size: 24px;
+  color: #596181;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 20px;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .name {
+  font-size: 20px;
+  font-weight: 500;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .student_ID {
+  font-size: 14px;
+  font-weight: 400;
+  color: #596181;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .present {
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #34A853;
+  transition: 0.4s ease-in-out;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .present:hover {
+  background-color: #34A853;
+  color: #fff;
+  cursor: pointer;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .absent {
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #EB0909;
+  transition: 0.4s ease-in-out;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .absent:hover {
+  background-color: #EB0909;
+  color: #fff;
+  cursor: pointer;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .sick {
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #424242;
+  transition: 0.4s ease-in-out;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .sick:hover {
+  background-color: #424242;
+  color: #fff;
+  cursor: pointer;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .p_active {
+  background-color: #34A853;
+  color: #fff;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .a_active {
+  background-color: #EB0909;
+  color: #fff;
+}
+body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .s_active {
+  background-color: #424242;
+  color: #fff;
 }
 body .main .mastersheet_school_fee-full-detail {
   background-color: #F5F5F5;

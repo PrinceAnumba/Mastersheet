@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fee details</title>
-    <link rel="stylesheet" href="../Utils/css/main.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="../Utils/images/favicon.ico">
+    <title>Attendance</title>
+    <link rel="stylesheet" href="../../Utils/css/main.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../Utils/images/favicon.ico">
     <!-- <link rel="stylesheet" href="./Utils/css/unsemantic-grid-responsive-tablet.css"> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/11037d18f8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://uicdn.toast.com/chart/latest/toastui-chart.min.css" />
+    <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+    <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.css">
+
+    <!-- inline -->
 </head>
 
 <body>
@@ -26,16 +31,16 @@
             <div class="navbar">
                 <div class="top-nav">
                     <div class="logo">
-                        <img class="profile_image" src="../Utils/images/MASTERSHEET ROUND 1.png" alt="Mastersheet logo">
+                        <img class="profile_image" src="../../Utils/images/MASTERSHEET ROUND 1.png" alt="Mastersheet logo">
                     </div>
                 </div>
                 <div class="user">
-                    <img src="../Utils/images/man 1.png" alt="">
+                    <img src="../../Utils/images/man 1.png" alt="">
                     <span class="name nai">John Paul</span>
                     <p class="position nai">Admin</p>
                 </div>
                 <div class="menu-list">
-                    <a href="../index.html" ><i class="fa-solid fa-house "></i>
+                    <a href="../../index.html"><i class="fa-solid fa-house "></i>
                         <p class="nai ">Dashboard</p>
                     </a>
                     <a href="#"><i class="fa-solid fa-envelope"></i>
@@ -44,10 +49,10 @@
                     <a href="#"><i class="fa-regular fa-newspaper"></i>
                         <p class="nai">Notice Board</p>
                     </a>
-                    <a href="./fee_details.html" class="active"><i class="fa-solid fa-money-bill"></i>
+                    <a href="../Fee Details/fee_details.html" ><i class="fa-solid fa-money-bill"></i>
                         <p class="nai">Fee Details</p>
                     </a>
-                    <a href="#"><i class="fa-solid fa-clipboard-user"></i>
+                    <a href="../Attendance/attendance_class.html" class="active"><i class="fa-solid fa-clipboard-user"></i>
                         <p class="nai">Attendance</p>
                     </a>
                     <a href="#"><i class="fa-solid fa-book"></i>
@@ -73,9 +78,11 @@
     </nav>
     <div class="main">
         <div class="container">
-           <div class="mastersheet_fee-details">
-                <div class="mastersheet_fee-details_header">
-                    <h2>Fee Details</h2>
+            <div class="attendance_top-nav">
+                <div class="attendance_header">
+                    <div class="left">
+                        <h2>Atttendance</h2>
+                    </div>
                     <div class="icons">
                         <div class="search">
                             <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
@@ -89,49 +96,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="mastersheet_fee-details_fields">
-                    <a href="./fee_details_school_fee.html">
-                        <div class="fee-item blue">
-                            <h6>School fee</h6>
-                            <p>...</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="fee-item grey">
-                            <h6>Exam fee</h6>
-                            <p>...</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="fee-item blue">
-                            <h6>Lesson fee</h6>
-                            <p>...</p>
-                        </div>
-                    </a>
-                    <div class="fee-component">
-                        <div class="fee-item cyan">
-                            <h6>Activity fee</h6>
-                            <p>...</p>
-                        </div>
-                        <div class="fee-item grey">
-                            <h6>Others</h6>
-                            <p>...</p>
-                        </div>
-                    </div>
+                <div class="attendance_body">
+                    <div id="calendar" style="height: 800px"></div>
                 </div>
-                <div class="mastersheet_fee-details_graph" id="chart">
-                    <div id="chart-area"></div>
-                </div>
-           </div>
+            </div>
         </div>
     </div>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="../Utils/js/index.js"></script>
+    <script src="../../Utils/js/index.js"></script>
     <script src="https://uicdn.toast.com/chart/latest/toastui-chart.min.js"></script>
-    <script src="../Utils/js/charts.js"></script>
+    <script src="../../Utils/js/charts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth'
+            });
+            calendar.render();
+        });
+    </script>
 </body>
 
 </html>

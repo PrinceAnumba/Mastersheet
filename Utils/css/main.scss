@@ -220,6 +220,166 @@ body {
         width: 100%;
         overflow: hidden;
 
+        // Library
+        .library_top-nav {
+            background-color: #F5F5F5;
+            margin: 2rem 0 0 1rem;
+            padding: 2rem 2rem;
+    
+            .library_header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .left {
+                    padding: 1rem;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+            
+                    h2 {
+                        margin-left: 1rem;
+                        margin-top: 0.4rem;
+                        text-transform: uppercase;
+                        font-weight: 750;
+                        color: $hero-header;
+                    }
+                }
+            
+                .icons {
+                    display: flex;
+                    gap: 2rem;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 1rem;
+
+
+                    a {
+                        text-decoration: none;
+                        .add-icon {
+                            height: 2.5rem;
+                            width: 2.5rem;
+                            border-radius: 20px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: $green-button;
+                    
+                            i {
+                                color: #fff;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+            
+                    .search {
+                        background-color: $white;
+                        border-radius: 20px;
+                        padding: 0.6rem 1rem;
+            
+                        i {
+                            margin: 0 1rem;
+                            color: $green-button;
+                        }
+                    }
+
+                    .notification {
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #fff;
+
+                        i {
+                            color: $green-button;
+                            font-size: 20px;
+                        }
+                    }
+
+                    .setting {
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #fff;
+
+                        i {
+                            color: $green-button;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+            .library_body{
+                padding: 2rem 1rem;
+                
+
+                .library_body_suggested {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .header {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        h4 {
+                            font-weight: 500;
+                            font-size: 32px;
+                            color: $card-header;
+                        }
+
+                        
+                    }
+
+                    .suggested_books {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1rem;
+                        padding-top: 2rem;
+
+
+                        .book {
+                            cursor: pointer;
+
+                            img {
+                                height: 400px;
+                            }
+                        }
+                    }
+
+                    .category-menu {
+                        padding-top: 6rem;
+                        width: 100%;
+                        ul {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 2.3rem;
+
+                            li{
+
+                                a {
+                                    text-decoration: none;
+                                    font-weight: 500;
+                                    font-size: 28px;
+                                    color: $green-button;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
         // attendance
         .attendance_top-nav {
             background-color: #F5F5F5;
@@ -263,13 +423,426 @@ body {
                             color: $green-button;
                         }
                     }
+
+                    .notification {
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #fff;
+
+                        i {
+                            color: $green-button;
+                            font-size: 20px;
+                        }
+                    }
+
+                    .setting {
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #fff;
+
+                        i {
+                            color: $green-button;
+                            font-size: 20px;
+                        }
+                    }
                 }
             }
 
             .attendance_body{
-                
+                #calendar {
+                    color: $hero-header;
+                    text-decoration: none;
+                    margin-top: 2rem;
+                }
             }
         }
+
+        // Attendance-class
+        .attendance_class_top-nav {
+            background-color: #F5F5F5;
+            margin: 2rem 0 0 1rem;
+            padding: 2rem 2rem;
+
+            .attendance_class_header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .left {
+                    padding: 1rem;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+
+                    a {
+                    
+                        .back-arrow {
+                            height: 30px;
+                            width: 30px;
+                            border-radius: 50%;
+                            background-color: #D9D9D9;
+                
+                            i {
+                                position: relative;
+                                top: 9%;
+                                left: 30%;
+                                color: #515151;
+                
+                            }
+                        }
+                        }
+
+                    h2 {
+                        margin-left: 1rem;
+                        margin-top: 0.4rem;
+                        text-transform: uppercase;
+                        font-weight: 750;
+                        color: $hero-header;
+                    }
+                }
+
+                .icons {
+                    display: flex;
+                    gap: 2rem;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 1rem;
+
+                    .search {
+                        background-color: $white;
+                        border-radius: 20px;
+                        padding: 0.6rem 1rem;
+
+                        i {
+                            margin: 0 1rem;
+                            color: $green-button;
+                        }
+                    }
+
+                    .notification {
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #fff;
+
+                        i {
+                            color: $green-button;
+                            font-size: 20px;
+                        }
+                    }
+
+                    .setting {
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #fff;
+
+                        i {
+                            color: $green-button;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+            .attendance_class_body {
+                margin-top: 2rem;
+
+                .date {
+                    color: $hero-header;
+                }
+
+                .classes {
+                    gap: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 2rem;
+
+                    a {
+                        text-decoration: none;
+                        .class {
+                            height: 150px;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            border-radius: 20px;
+                            padding: 1rem;
+                    
+                            h2 {
+                                font-size: 24px;
+                                font-weight: 500;
+                                color: $hero-header;
+                            }
+                    
+                            img {
+                                height: 120px;
+                            }
+                    
+                        }
+                    }
+
+                    .blue {
+                        background-color: #D7C5FF;
+                    }
+
+                    .gold {
+                        background-color: #FFC4BC;
+                    }
+
+                    .cyan {
+                        background-color: #EABCFF;
+                    }
+                }
+            }
+        }
+
+        // Attendance-class-students
+        .attendance_class_students_top-nav {
+            background-color: #F5F5F5;
+            margin: 2rem 0 0 1rem;
+            padding: 2rem 2rem;
+
+            .attendance_class_students_header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .left {
+                    padding: 1rem;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+
+                    a {
+
+                        .back-arrow {
+                            height: 30px;
+                            width: 30px;
+                            border-radius: 50%;
+                            background-color: #D9D9D9;
+
+                            i {
+                                position: relative;
+                                top: 9%;
+                                left: 30%;
+                                color: #515151;
+
+                            }
+                        }
+                    }
+
+                    h2 {
+                        margin-left: 1rem;
+                        margin-top: 0.4rem;
+                        text-transform: uppercase;
+                        font-weight: 750;
+                        color: $hero-header;
+                    }
+                }
+
+                .icons {
+                    display: flex;
+                    gap: 2rem;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 1rem;
+
+                    .search {
+                        background-color: $white;
+                        border-radius: 20px;
+                        padding: 0.6rem 1rem;
+
+                        i {
+                            margin: 0 1rem;
+                            color: $green-button;
+                        }
+                    }
+
+                    .notification {
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #fff;
+
+                        i {
+                            color: $green-button;
+                            font-size: 20px;
+                        }
+                    }
+
+                    .setting {
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #fff;
+
+                        i {
+                            color: $green-button;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+            .attendance_class_students_body {
+                margin-top: 2rem;
+                
+                .date {
+                    color: $hero-header;
+                }
+
+                .class {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    h1 {
+                        font-size: 36px;
+                        color: $hero-header;
+                    }
+
+                    span {
+                        font-size: 24px;
+                        color: $card-body-text;
+                    }
+                }
+
+                .table {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 2rem;
+                    margin-top: 2rem;
+                    background-color: #fff;
+                    border-radius: 20px;
+
+                    .row {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .content {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .name {
+                                font-size: 20px;
+                                font-weight: 500;
+                            }
+
+                            .student_ID {
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: $card-body-text;
+                            }
+
+                            .attendance_history {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 1rem;
+
+                                .present {
+                                    border-radius: 50px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 30px;
+                                    width: 30px;
+                                    border: 2px solid #34A853;
+                                    transition: 0.4s ease-in-out;
+
+                                    &:hover{
+                                        background-color: #34A853;
+                                        color: #fff;
+                                        cursor: pointer;
+                                    }
+
+                                    
+                                }
+
+                                .absent {
+                                    border-radius: 50px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 30px;
+                                    width: 30px;
+                                    border: 2px solid #EB0909;
+                                    transition: 0.4s ease-in-out;
+
+                                    &:hover {
+                                        background-color: #EB0909;
+                                        color: #fff;
+                                        cursor: pointer;
+                                    }
+
+                                    
+                                }
+
+                                .sick {
+                                    border-radius: 50px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 30px;
+                                    width: 30px;
+                                    border: 2px solid #424242;
+                                    transition: 0.4s ease-in-out;
+
+                                    &:hover {
+                                        background-color: #424242;
+                                        color: #fff;
+                                        cursor: pointer;
+                                    }
+
+                                    
+                                }
+
+                                .p_active {
+                                    background-color: #34A853;
+                                    color: #fff;
+                                }
+
+                                .a_active {
+                                    background-color: #EB0909;
+                                    color: #fff;
+                                }
+
+                                .s_active {
+                                    background-color: #424242;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
 
         // School fee full details
         .mastersheet_school_fee-full-detail {

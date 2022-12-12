@@ -7,7 +7,7 @@
 
 
 $("nav").hover(function() {
-  $(".profile_image").attr("src","../Utils/images/MASTERSHEET-White 1.png");
+  $(".profile_image").attr("src","../../Utils/images/MASTERSHEET-White 1.png");
   $("body .left-gap").css("width","23%");
   $("body nav").css("left","0px");
   $("nav .wrap .navbar .top-nav .logo").css("margin-right","0px");
@@ -28,7 +28,7 @@ $("nav").hover(function() {
 
 
 $("nav").mouseleave(function() {
-  $(".profile_image").attr("src","../Utils/images/MASTERSHEET ROUND 1.png");
+  $(".profile_image").attr("src","../../Utils/images/MASTERSHEET ROUND 1.png");
   $("body .left-gap").css("width","180px");
   $("body nav").css("left","60px");
   $("nav .wrap .navbar .top-nav .logo").css("margin-right","130px");
