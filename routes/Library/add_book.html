@@ -53,8 +53,7 @@
                     <a href="../Fee Details/fee_details.html"><i class="fa-solid fa-money-bill"></i>
                         <p class="nai">Fee Details</p>
                     </a>
-                    <a href="../Attendance/attendance_class.html" ><i
-                            class="fa-solid fa-clipboard-user"></i>
+                    <a href="../Attendance/attendance_class.html"><i class="fa-solid fa-clipboard-user"></i>
                         <p class="nai">Attendance</p>
                     </a>
                     <a href="#" class="active"><i class="fa-solid fa-book"></i>
@@ -80,15 +79,20 @@
     </nav>
     <div class="main">
         <div class="container">
-            <div class="library_top-nav">
-                <div class="library_header">
+            <div class="add_book_top-nav">
+                <div class="add_book_header">
                     <div class="left">
+                        <a href="./library.html">
+                            <div class="back-arrow">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </div>
+                        </a>
                         <h2>Library</h2>
                     </div>
                     <div class="icons">
-                        <a href="./add_book.html">
-                            <div class="add-icon">
-                                <i class="fa-solid fa-plus"></i>
+                        <a href="#">
+                            <div class="save-button">
+                                <p>Save</p>
                             </div>
                         </a>
                         <div class="search">
@@ -103,92 +107,71 @@
                         </div>
                     </div>
                 </div>
-                <div class="library_body">
-                    <div class="library_body_suggested">
-                        <div class="header">
-                            <h4>Suggested for you</h4>
-                            <a href="./library_all_suggestions.html">View all</a>
+                <div class="add_book_body">
+                    <h2 class="title">Add a new book</h2>
+                    <div class="book_details_container">
+                        <div class="heading_bar">
+                            <h3>Book Details</h3>
                         </div>
-                        <div class="suggested_books">
-                            <div class="book">
-                                <img src="../../Utils/images/Rectangle 1.png" alt="book-image">
-                            </div>
-                            <div class="book">
-                                <img src="../../Utils/images/Rectangle 2.png" alt="book-image">
-                            </div>
-                            <div class="book">
-                                <img src="../../Utils/images/Rectangle 3.png" alt="book-image">
-                            </div>
-                            <div class="book">
-                                <img src="../../Utils/images/Rectangle 4.png" alt="book-image">
-                            </div>                            
-                        </div>
-                        <div class="category-menu">
-                            <ul>
-                                <li><a href="#" class="active">All</a></li>
-                                <li><a href="#">Maths</a></li>
-                                <li><a href="#">Physics</a></li>
-                                <li><a href="#">CRK</a></li>
-                                <li><a href="#">Social Studies</a></li>
-                                <li><a href="#">Accounting</a></li>
-                                <li><a href="#">Markrting</a></li>
-                                <li><a href="#">Visual Art</a></li>
-                            </ul>
-                        </div>
-                        <div class="sort-bar">
+                        <div class="form">
+                            <div class="left">
+                                <div class="field">
+                                    <label for="book name">Book Name *</label>
+                                    <input type="text" name="book name" id="" placeholder="Maria">
+                                </div>
+                                <div class="field">
+                                    <label for="writer's name">Writer's Name *</label>
+                                    <input type="text" name="writer's name" id="" placeholder="Historia">
+                                </div>
+                                <div class="field">
+                                    <label for="book type">Book Type *</label>
+                                    <input type="text" name="book type" id="" placeholder="Biology">
+                                </div>
+                                <div class="field">
+                                    <label for="price">Price *</label>
+                                    <input type="text" name="price" id="" placeholder="24$">
+                                </div>
 
-                        </div>
-                        <div class="book-column">
-                            <div class="book-image">
-                                <img src="../../Utils/images/Rectangle 2.png" alt="">
+                                <div class="writers_info">
+                                    <input type="text" name="price" id="" placeholder="email">
+                                    <input type="text" name="price" id="" placeholder="website">
+                                    <input type="text" name="price" id="" placeholder="contact">
+                                </div>
                             </div>
-                            <div class="description">
-                                <h2 class="book-name">Change by design</h2>
-                                <h4 class="author">Tim Brown</h4>
-                                <p class="extract">
-                                    In publishing and graphic design, Lorem ipsum is a placeholder text
-                                    commonly used to demonstrate the visual form of a document or a
-                                    typeface without relying on meaningful content.
-                                    Lorem ipsum may be used as a placeholder before final copy is available.
-                                </p>
-                                <h5 class="price">Rs. 780</h5>
-                                <div class="action-buttons">
-                                    <button> Design</button>
-                                    <button> User Interface</button>
+                            <div class="right">
+                                <div class="field">
+                                    <label for="Photo">Photo</label>
+                                    <div class="drag-area">
+                                        <p>Drag and dtop or click here to select file</p>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label for="Highlight">Highlight *</label>
+                                    <div class="drag-area">
+                                        <p>Drag and dtop or click here to select file</p>
+                                        <textarea name="" id="" cols="30" rows="10">
+                                            Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna aliqua. Ut enim ad
+                                            minim veniam, quis nostrud exercitation ullamco
+                                            laboris nisi ut aliquip ex ea commodo
+                                            consequat.
+                                        </textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="book-column">
-                            <div class="book-image">
-                                <img src="../../Utils/images/Rectangle 1.png" alt="">
-                            </div>
-                            <div class="description">
-                                <h2 class="book-name">Change by design</h2>
-                                <h4 class="author">Tim Brown</h4>
-                                <p class="extract">
-                                    In publishing and graphic design, Lorem ipsum is a placeholder text
-                                    commonly used to demonstrate the visual form of a document or a
-                                    typeface without relying on meaningful content.
-                                    Lorem ipsum may be used as a placeholder before final copy is available.
-                                </p>
-                                <h5 class="price">Rs. 780</h5>
-                                <div class="action-buttons">
-                                    <button> Design</button>
-                                    <button> User Interface</button>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../../Utils/js/index.js"></script>
-    <script src="https://uicdn.toast.com/chart/latest/toastui-chart.min.js"></script>
 </body>
 
 </html>

@@ -53,8 +53,7 @@
                     <a href="../Fee Details/fee_details.html"><i class="fa-solid fa-money-bill"></i>
                         <p class="nai">Fee Details</p>
                     </a>
-                    <a href="../Attendance/attendance_class.html" ><i
-                            class="fa-solid fa-clipboard-user"></i>
+                    <a href="../Attendance/attendance_class.html"><i class="fa-solid fa-clipboard-user"></i>
                         <p class="nai">Attendance</p>
                     </a>
                     <a href="#" class="active"><i class="fa-solid fa-book"></i>
@@ -83,6 +82,11 @@
             <div class="library_top-nav">
                 <div class="library_header">
                     <div class="left">
+                        <a href="./library.html">
+                            <div class="back-arrow">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </div>
+                        </a>
                         <h2>Library</h2>
                     </div>
                     <div class="icons">
@@ -103,81 +107,44 @@
                         </div>
                     </div>
                 </div>
-                <div class="library_body">
-                    <div class="library_body_suggested">
-                        <div class="header">
-                            <h4>Suggested for you</h4>
-                            <a href="./library_all_suggestions.html">View all</a>
-                        </div>
-                        <div class="suggested_books">
+                <div class="library_all_suggestions_body">
+                    <div class="library_all_suggestions_body_suggested">
+
+                        <div class="book_details_container">
                             <div class="book">
-                                <img src="../../Utils/images/Rectangle 1.png" alt="book-image">
+                                <a href="#"><img src="../../Utils/images/Rectangle 4.png" alt="book-image"></a>
                             </div>
-                            <div class="book">
-                                <img src="../../Utils/images/Rectangle 2.png" alt="book-image">
+                            <div class="book_details_body">
+                                <h1 class="book_title">Made to Stick</h1>
+                                <div class="actions">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-bookmark"></i>
+                                </div>
                             </div>
-                            <div class="book">
-                                <img src="../../Utils/images/Rectangle 3.png" alt="book-image">
+                            <h3 class="author">Chip Heath & Dan Heath</h3>
+                            <div class="action-buttons">
+                                <button> Design</button>
+                                <button> User Interface</button>
                             </div>
-                            <div class="book">
-                                <img src="../../Utils/images/Rectangle 4.png" alt="book-image">
-                            </div>                            
-                        </div>
-                        <div class="category-menu">
-                            <ul>
-                                <li><a href="#" class="active">All</a></li>
-                                <li><a href="#">Maths</a></li>
-                                <li><a href="#">Physics</a></li>
-                                <li><a href="#">CRK</a></li>
-                                <li><a href="#">Social Studies</a></li>
-                                <li><a href="#">Accounting</a></li>
-                                <li><a href="#">Markrting</a></li>
-                                <li><a href="#">Visual Art</a></li>
-                            </ul>
-                        </div>
-                        <div class="sort-bar">
+                            <div class="extract">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a
+                                document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy
+                                is available.In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+                                form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before
+                                final copy is available.
+                            </div>
+
+                            <div class="cta-buttons">
+                                <div class="cont">
+                                    <button class="atc">ADD TO CART</button>
+                                    <button class="read">READ</button>
+                                </div>
+                            </div>
+
 
                         </div>
-                        <div class="book-column">
-                            <div class="book-image">
-                                <img src="../../Utils/images/Rectangle 2.png" alt="">
-                            </div>
-                            <div class="description">
-                                <h2 class="book-name">Change by design</h2>
-                                <h4 class="author">Tim Brown</h4>
-                                <p class="extract">
-                                    In publishing and graphic design, Lorem ipsum is a placeholder text
-                                    commonly used to demonstrate the visual form of a document or a
-                                    typeface without relying on meaningful content.
-                                    Lorem ipsum may be used as a placeholder before final copy is available.
-                                </p>
-                                <h5 class="price">Rs. 780</h5>
-                                <div class="action-buttons">
-                                    <button> Design</button>
-                                    <button> User Interface</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="book-column">
-                            <div class="book-image">
-                                <img src="../../Utils/images/Rectangle 1.png" alt="">
-                            </div>
-                            <div class="description">
-                                <h2 class="book-name">Change by design</h2>
-                                <h4 class="author">Tim Brown</h4>
-                                <p class="extract">
-                                    In publishing and graphic design, Lorem ipsum is a placeholder text
-                                    commonly used to demonstrate the visual form of a document or a
-                                    typeface without relying on meaningful content.
-                                    Lorem ipsum may be used as a placeholder before final copy is available.
-                                </p>
-                                <h5 class="price">Rs. 780</h5>
-                                <div class="action-buttons">
-                                    <button> Design</button>
-                                    <button> User Interface</button>
-                                </div>
-                            </div>
-                        </div>
+                        
+
                     </div>
                 </div>
             </div>
@@ -185,10 +152,8 @@
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../../Utils/js/index.js"></script>
-    <script src="https://uicdn.toast.com/chart/latest/toastui-chart.min.js"></script>
 </body>
 
 </html>
