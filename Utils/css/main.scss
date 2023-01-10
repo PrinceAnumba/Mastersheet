@@ -288,6 +288,17 @@ body {
                                 font-size: 20px;
                                 margin-bottom: 0;
                             }
+<<<<<<< HEAD
+=======
+
+                            &:hover {
+                                background-color: $yellow-ish;
+                                
+                                p {
+                                    color: #121212;
+                                }
+                            }
+>>>>>>> b42df85 (library done)
                         }
                     }
             
@@ -355,7 +366,11 @@ body {
 
                         h3 {
                             padding-left: 2rem;
+<<<<<<< HEAD
                             color: #fff;
+=======
+                            color: #fff; 
+>>>>>>> b42df85 (library done)
                         }
                     }
                     .form {
@@ -373,6 +388,29 @@ body {
                             .field {
                                 display: flex;
                                 flex-direction: column;
+<<<<<<< HEAD
+=======
+                                gap: 1rem;
+
+                                label {
+                                    font-size: 18px;
+                                    color: $header-color;
+                                    font-weight: 600;
+                                }
+
+                                input {
+                                    width: 500px;
+                                    border: 1px solid $shade-blue;
+                                    border-radius: 5px;
+                                    padding: 0.4rem 0.5rem;
+                                    
+
+                                    &:focus {
+                                        border: 2px solid $shade-blue;
+                                        transition: 0.2s ease-in;
+                                    }
+                                }
+>>>>>>> b42df85 (library done)
                             }
 
 
@@ -381,6 +419,74 @@ body {
                         .right {
                             padding: 1rem;
                             flex: 0.8;
+<<<<<<< HEAD
+=======
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2rem;
+
+                            .field {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1rem;
+                                
+                                label {
+                                    font-size: 18px;
+                                    color: $header-color;
+                                    font-weight: 600;
+                                }
+
+                                .uploadOuter {
+                                    text-align: center;
+                                    padding: 20px;
+
+                                    strong {
+                                        padding: 0 10px
+                                    }
+                                }
+
+                                .dragBox {
+                                    width: 220px;
+                                    height: 289px;
+                                    margin: 0;
+                                    position: relative;
+                                    text-align: center;
+                                    line-height: 25px;
+                                    color: #999;
+                                    border: 2px dashed $shade-blue;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: transform 0.3s;
+
+                                    input[type="file"] {
+                                        position: absolute;
+                                        height: 100%;
+                                        width: 100%;
+                                        opacity: 0;
+                                        top: 0;
+                                        left: 0;
+                                    }
+                                }
+
+                                .draging {
+                                    transform: scale(1.1);
+                                }
+
+                                #preview {
+                                    text-align: center;
+
+                                    img {
+                                        max-width: 100%
+                                    }
+                                }
+
+                                textarea {
+                                    border: 1px solid $shade-blue;
+                                    padding: 0.4rem;
+                                }
+                            }
+>>>>>>> b42df85 (library done)
                         }
                     }
 
