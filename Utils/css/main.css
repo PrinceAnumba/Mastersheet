@@ -332,6 +332,88 @@ body .main .add_book_top-nav .add_book_header .icons {
   align-items: center;
   margin-right: 1rem;
 }
+body .main .add_book_top-nav .add_book_header .icons .search {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+}
+body .main .add_book_top-nav .add_book_header .icons .search i {
+  margin: 0 1rem;
+  color: #34A853;
+}
+body .main .add_book_top-nav form {
+  padding: 4rem 0 0 0;
+  background-color: #ececec;
+  border-radius: 25px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .main .add_book_top-nav form .centered-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .main .add_book_top-nav form .centered-action img {
+  width: 500px;
+}
+body .main .add_book_top-nav form .centered-action p {
+  color: #A6A6A6;
+}
+body .main .add_book_top-nav form button {
+  padding: 1rem;
+  background-color: #34A853;
+  border-radius: 25px;
+  color: #fff;
+}
+body .main .add_book_top-nav form button:hover {
+  background-color: #F9C975;
+  color: #121212;
+}
+body .main .add_book_top-nav {
+  background-color: #F5F5F5;
+  margin: 2rem 0 0 1rem;
+  padding: 2rem 2rem;
+}
+body .main .add_book_top-nav .add_book_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .add_book_top-nav .add_book_header .left {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+body .main .add_book_top-nav .add_book_header .left a .back-arrow {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+body .main .add_book_top-nav .add_book_header .left a .back-arrow i {
+  position: relative;
+  top: 9%;
+  left: 30%;
+  color: #515151;
+}
+body .main .add_book_top-nav .add_book_header .left h2 {
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+  font-weight: 750;
+  color: #222A49;
+}
+body .main .add_book_top-nav .add_book_header .icons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
 body .main .add_book_top-nav .add_book_header .icons a {
   text-decoration: none;
 }
@@ -348,15 +430,12 @@ body .main .add_book_top-nav .add_book_header .icons a .save-button p {
   font-size: 20px;
   margin-bottom: 0;
 }
-<<<<<<< HEAD
-=======
 body .main .add_book_top-nav .add_book_header .icons a .save-button:hover {
   background-color: #F9C975;
 }
 body .main .add_book_top-nav .add_book_header .icons a .save-button:hover p {
   color: #121212;
 }
->>>>>>> b42df85 (library done)
 body .main .add_book_top-nav .add_book_header .icons .search {
   background-color: #fff;
   border-radius: 20px;
@@ -409,6 +488,7 @@ body .main .add_book_top-nav .add_book_body .book_details_container .heading_bar
 body .main .add_book_top-nav .add_book_body .book_details_container .heading_bar h3 {
   padding-left: 2rem;
   color: #fff;
+  color: #fff;
 }
 body .main .add_book_top-nav .add_book_body .book_details_container .form {
   background-color: #fff;
@@ -425,8 +505,6 @@ body .main .add_book_top-nav .add_book_body .book_details_container .form .left 
 body .main .add_book_top-nav .add_book_body .book_details_container .form .left .field {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-=======
   gap: 1rem;
 }
 body .main .add_book_top-nav .add_book_body .book_details_container .form .left .field label {
@@ -443,13 +521,10 @@ body .main .add_book_top-nav .add_book_body .book_details_container .form .left 
 body .main .add_book_top-nav .add_book_body .book_details_container .form .left .field input:focus {
   border: 2px solid #C1BBEB;
   transition: 0.2s ease-in;
->>>>>>> b42df85 (library done)
 }
 body .main .add_book_top-nav .add_book_body .book_details_container .form .right {
   padding: 1rem;
   flex: 0.8;
-<<<<<<< HEAD
-=======
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -505,7 +580,6 @@ body .main .add_book_top-nav .add_book_body .book_details_container .form .right
 body .main .add_book_top-nav .add_book_body .book_details_container .form .right .field textarea {
   border: 1px solid #C1BBEB;
   padding: 0.4rem;
->>>>>>> b42df85 (library done)
 }
 body .main .library_top-nav {
   background-color: #F5F5F5;

@@ -220,6 +220,113 @@ body {
         width: 100%;
         overflow: hidden;
 
+        // Course materials
+            .add_book_top-nav {
+                background-color: #F5F5F5;
+                margin: 2rem 0 0 1rem;
+                padding: 2rem 2rem;
+        
+                .add_book_header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+        
+                    .left {
+                        padding: 1rem;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: row;
+        
+                        a {
+        
+                            .back-arrow {
+                                height: 30px;
+                                width: 30px;
+                                border-radius: 50%;
+                                background-color: #D9D9D9;
+        
+                                i {
+                                    position: relative;
+                                    top: 9%;
+                                    left: 30%;
+                                    color: #515151;
+        
+                                }
+                            }
+                        }
+        
+                        h2 {
+                            margin-left: 1rem;
+                            margin-top: 0.4rem;
+                            text-transform: uppercase;
+                            font-weight: 750;
+                            color: $hero-header;
+                        }
+                    }
+        
+                    .icons {
+                        display: flex;
+                        gap: 2rem;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 1rem;
+        
+                        .search {
+                            background-color: $white;
+                            border-radius: 20px;
+                            padding: 0.6rem 1rem;
+        
+                            i {
+                                margin: 0 1rem;
+                                color: $green-button;
+                            }
+                        }                        
+                    }
+                }
+                form {
+                    padding: 4rem 0 0 0;
+                    background-color: #ececec;
+                    border-radius: 25px;
+                    height: 80vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .centered-action {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        img {
+                            width: 500px;
+                        }
+
+                        h3 {
+                        }
+
+                        p {
+                            color: $card-background;
+                        }
+                    }
+
+                    button {
+                        padding: 1rem;
+                        background-color: $green-button;
+                        border-radius: 25px;
+                        color: $white;
+
+                        &:hover {
+                            background-color: $yellow-ish;
+                            color: #121212;
+                        }
+                    }
+                }
+
+        
+                
+            }
+
+
         // ADD Book
         .add_book_top-nav {
             background-color: #F5F5F5;
@@ -288,7 +395,6 @@ body {
                                 font-size: 20px;
                                 margin-bottom: 0;
                             }
-
 
                             &:hover {
                                 background-color: $yellow-ish;
