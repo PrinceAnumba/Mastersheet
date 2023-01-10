@@ -1,9 +1,4 @@
 
-<<<<<<< HEAD
-// $(".nai").empty();
-// $(".name").empty();
-// $(".position").empty();
-=======
 // Dragging to upload an image
 "use strict";
 function dragNdrop(event) {
@@ -20,7 +15,6 @@ function drag() {
 function drop() {
     document.getElementById('uploadFile').parentNode.className = 'dragBox';
 }
->>>>>>> b42df85 (library done)
 
 
 
