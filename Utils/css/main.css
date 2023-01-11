@@ -290,58 +290,65 @@ body .main {
   width: 100%;
   overflow: hidden;
 }
-body .main .add_book_top-nav {
+body .main .container {
+  width: 100%;
+}
+body .main .container .add_book_top-nav {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
   padding: 2rem 2rem;
 }
-body .main .add_book_top-nav .add_book_header {
+body .main .container .add_book_top-nav .add_book_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .main .add_book_top-nav .add_book_header .left {
+body .main .container .add_book_top-nav .add_book_header .left {
   padding: 1rem;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-body .main .add_book_top-nav .add_book_header .left a .back-arrow {
+body .main .container .add_book_top-nav .add_book_header .left a .back-arrow {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background-color: #D9D9D9;
+  display: none;
 }
-body .main .add_book_top-nav .add_book_header .left a .back-arrow i {
+body .main .container .add_book_top-nav .add_book_header .left a .back-arrow i {
   position: relative;
   top: 9%;
   left: 30%;
   color: #515151;
 }
-body .main .add_book_top-nav .add_book_header .left h2 {
+body .main .container .add_book_top-nav .add_book_header .left h2 {
   margin-left: 1rem;
   margin-top: 0.4rem;
   text-transform: uppercase;
   font-weight: 750;
   color: #222A49;
 }
-body .main .add_book_top-nav .add_book_header .icons {
+body .main .container .add_book_top-nav .add_book_header .icons {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
-body .main .add_book_top-nav .add_book_header .icons .search {
+body .main .container .add_book_top-nav .add_book_header .icons .search {
   background-color: #fff;
   border-radius: 20px;
   padding: 0.6rem 1rem;
 }
-body .main .add_book_top-nav .add_book_header .icons .search i {
+body .main .container .add_book_top-nav .add_book_header .icons .search i {
   margin: 0 1rem;
   color: #34A853;
 }
-body .main .add_book_top-nav form {
+body .main .container .add_book_top-nav .main_container {
+  position: relative;
+}
+body .main .container .add_book_top-nav .main_container .background {
   padding: 4rem 0 0 0;
   background-color: #ececec;
   border-radius: 25px;
@@ -350,74 +357,229 @@ body .main .add_book_top-nav form {
   flex-direction: column;
   justify-content: space-between;
 }
-body .main .add_book_top-nav form .centered-action {
+body .main .container .add_book_top-nav .main_container .background .centered-action {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-body .main .add_book_top-nav form .centered-action img {
+body .main .container .add_book_top-nav .main_container .background .centered-action img {
   width: 500px;
 }
-body .main .add_book_top-nav form .centered-action p {
+body .main .container .add_book_top-nav .main_container .background .centered-action p {
   color: #A6A6A6;
 }
-body .main .add_book_top-nav form button {
+body .main .container .add_book_top-nav .main_container .background button {
   padding: 1rem;
   background-color: #34A853;
   border-radius: 25px;
   color: #fff;
 }
-body .main .add_book_top-nav form button:hover {
+body .main .container .add_book_top-nav .main_container .background button:hover {
   background-color: #F9C975;
   color: #121212;
 }
-body .main .add_book_top-nav {
+body .main .container .add_book_top-nav .main_container #upload_details {
+  padding: 4rem 0 0 0;
+  background-color: #fff;
+  opacity: 90%;
+  border-radius: 25px;
+  height: 80vh;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-out;
+}
+body .main .container .add_book_top-nav .main_container #upload_details .input-item {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+}
+body .main .container .add_book_top-nav .main_container #upload_details .input-item i {
+  color: #121212;
+}
+body .main .container .add_book_top-nav .main_container #upload_details .input-item button {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  background-color: #fff;
+  color: #121212;
+}
+body .main .container .add_book_top-nav .main_container #upload_details .input-item button:hover {
+  background-color: grey;
+}
+body .main .container .add_book_top-nav .main_container #view_materials::-moz-selection {
+  background: rgba(23, 162, 184, 0.3);
+}
+body .main .container .add_book_top-nav .main_container #view_materials::selection {
+  background: rgba(23, 162, 184, 0.3);
+}
+body .main .container .add_book_top-nav .main_container #view_materials .wrapper {
+  max-width: 100%;
+  width: 100%;
+  margin: 200px auto;
+  padding: 25px 30px 30px 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+body .main .container .add_book_top-nav .main_container #view_materials .wrapper header {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+body .main .container .add_book_top-nav .main_container #view_materials .wrapper nav {
+  position: relative;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+body .main .container .add_book_top-nav .main_container #view_materials .wrapper nav label {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  color: #17a2b8;
+  font-size: 17px;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+body .main .container .add_book_top-nav .main_container #view_materials .wrapper nav label:hover {
+  background: rgba(23, 162, 184, 0.3);
+}
+body .main .container .add_book_top-nav .main_container #view_materials #home:checked ~ nav label.home {
+  color: #fff;
+}
+body .main .container .add_book_top-nav .main_container #view_materials #home:checked ~ section .content-1 {
+  display: block;
+}
+body .main .container .add_book_top-nav .main_container #view_materials #blog:checked ~ nav label.blog {
+  color: #fff;
+}
+body .main .container .add_book_top-nav .main_container #view_materials #blog:checked ~ nav .slider {
+  left: 20%;
+}
+body .main .container .add_book_top-nav .main_container #view_materials #blog:checked ~ section .content-2 {
+  display: block;
+}
+body .main .container .add_book_top-nav .main_container #view_materials #code:checked ~ nav label.code {
+  color: #fff;
+}
+body .main .container .add_book_top-nav .main_container #view_materials #code:checked ~ nav .slider {
+  left: 40%;
+}
+body .main .container .add_book_top-nav .main_container #view_materials #code:checked ~ section .content-3 {
+  display: block;
+}
+body .main .container .add_book_top-nav .main_container #view_materials #help:checked ~ nav label.help {
+  color: #fff;
+}
+body .main .container .add_book_top-nav .main_container #view_materials #help:checked ~ nav .slider {
+  left: 60%;
+}
+body .main .container .add_book_top-nav .main_container #view_materials #help:checked ~ section .content-4 {
+  display: block;
+}
+body .main .container .add_book_top-nav .main_container #view_materials #about:checked ~ nav label.about {
+  color: #fff;
+}
+body .main .container .add_book_top-nav .main_container #view_materials #about:checked ~ nav .slider {
+  left: 80%;
+}
+body .main .container .add_book_top-nav .main_container #view_materials #about:checked ~ section .content-5 {
+  display: block;
+}
+body .main .container .add_book_top-nav .main_container #view_materials nav label i {
+  padding-right: 7px;
+}
+body .main .container .add_book_top-nav .main_container #view_materials nav .slider {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: #17a2b8;
+  transition: all 0.3s ease;
+}
+body .main .container .add_book_top-nav .main_container #view_materials input[type=radio] {
+  display: none;
+}
+body .main .container .add_book_top-nav .main_container #view_materials section .content {
+  display: none;
+  background: #fff;
+}
+body .main .container .add_book_top-nav .main_container #view_materials section .content .title {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 30px 0 10px 0;
+}
+body .main .container .add_book_top-nav .main_container #view_materials section .content p {
+  text-align: justify;
+}
+body .main .container .add_book_top-nav {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
   padding: 2rem 2rem;
 }
-body .main .add_book_top-nav .add_book_header {
+body .main .container .add_book_top-nav .add_book_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .main .add_book_top-nav .add_book_header .left {
+body .main .container .add_book_top-nav .add_book_header .left {
   padding: 1rem;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-body .main .add_book_top-nav .add_book_header .left a .back-arrow {
+body .main .container .add_book_top-nav .add_book_header .left a .back-arrow {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background-color: #D9D9D9;
 }
-body .main .add_book_top-nav .add_book_header .left a .back-arrow i {
+body .main .container .add_book_top-nav .add_book_header .left a .back-arrow i {
   position: relative;
   top: 9%;
   left: 30%;
   color: #515151;
 }
-body .main .add_book_top-nav .add_book_header .left h2 {
+body .main .container .add_book_top-nav .add_book_header .left h2 {
   margin-left: 1rem;
   margin-top: 0.4rem;
   text-transform: uppercase;
   font-weight: 750;
   color: #222A49;
 }
-body .main .add_book_top-nav .add_book_header .icons {
+body .main .container .add_book_top-nav .add_book_header .icons {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
-body .main .add_book_top-nav .add_book_header .icons a {
+body .main .container .add_book_top-nav .add_book_header .icons a {
   text-decoration: none;
 }
-body .main .add_book_top-nav .add_book_header .icons a .save-button {
+body .main .container .add_book_top-nav .add_book_header .icons a .save-button {
   padding: 6px 16px;
   display: flex;
   justify-content: center;
@@ -425,27 +587,27 @@ body .main .add_book_top-nav .add_book_header .icons a .save-button {
   background-color: #34A853;
   border-radius: 20px;
 }
-body .main .add_book_top-nav .add_book_header .icons a .save-button p {
+body .main .container .add_book_top-nav .add_book_header .icons a .save-button p {
   color: #fff;
   font-size: 20px;
   margin-bottom: 0;
 }
-body .main .add_book_top-nav .add_book_header .icons a .save-button:hover {
+body .main .container .add_book_top-nav .add_book_header .icons a .save-button:hover {
   background-color: #F9C975;
 }
-body .main .add_book_top-nav .add_book_header .icons a .save-button:hover p {
+body .main .container .add_book_top-nav .add_book_header .icons a .save-button:hover p {
   color: #121212;
 }
-body .main .add_book_top-nav .add_book_header .icons .search {
+body .main .container .add_book_top-nav .add_book_header .icons .search {
   background-color: #fff;
   border-radius: 20px;
   padding: 0.6rem 1rem;
 }
-body .main .add_book_top-nav .add_book_header .icons .search i {
+body .main .container .add_book_top-nav .add_book_header .icons .search i {
   margin: 0 1rem;
   color: #34A853;
 }
-body .main .add_book_top-nav .add_book_header .icons .notification {
+body .main .container .add_book_top-nav .add_book_header .icons .notification {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -454,11 +616,11 @@ body .main .add_book_top-nav .add_book_header .icons .notification {
   align-items: center;
   background-color: #fff;
 }
-body .main .add_book_top-nav .add_book_header .icons .notification i {
+body .main .container .add_book_top-nav .add_book_header .icons .notification i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .add_book_top-nav .add_book_header .icons .setting {
+body .main .container .add_book_top-nav .add_book_header .icons .setting {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -467,17 +629,17 @@ body .main .add_book_top-nav .add_book_header .icons .setting {
   align-items: center;
   background-color: #fff;
 }
-body .main .add_book_top-nav .add_book_header .icons .setting i {
+body .main .container .add_book_top-nav .add_book_header .icons .setting i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .add_book_top-nav .add_book_body .title {
+body .main .container .add_book_top-nav .add_book_body .title {
   font-weight: 500;
   font-size: 32px;
   line-height: 48px;
   color: #303972;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .heading_bar {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .heading_bar {
   width: 100%;
   height: 50px;
   background-color: #34A853;
@@ -485,68 +647,68 @@ body .main .add_book_top-nav .add_book_body .book_details_container .heading_bar
   flex-direction: column;
   justify-content: center;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .heading_bar h3 {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .heading_bar h3 {
   padding-left: 2rem;
   color: #fff;
   color: #fff;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form {
   background-color: #fff;
   display: flex;
   flex-direction: row;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .left {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .left {
   padding: 1rem;
   flex: 1.2;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .left .field {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .left .field {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .left .field label {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .left .field label {
   font-size: 18px;
   color: #282E44;
   font-weight: 600;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .left .field input {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .left .field input {
   width: 500px;
   border: 1px solid #C1BBEB;
   border-radius: 5px;
   padding: 0.4rem 0.5rem;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .left .field input:focus {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .left .field input:focus {
   border: 2px solid #C1BBEB;
   transition: 0.2s ease-in;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .right {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .right {
   padding: 1rem;
   flex: 0.8;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .right .field {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .right .field {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .right .field label {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .right .field label {
   font-size: 18px;
   color: #282E44;
   font-weight: 600;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .right .field .uploadOuter {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .right .field .uploadOuter {
   text-align: center;
   padding: 20px;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .right .field .uploadOuter strong {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .right .field .uploadOuter strong {
   padding: 0 10px;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .right .field .dragBox {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .right .field .dragBox {
   width: 220px;
   height: 289px;
   margin: 0;
@@ -560,7 +722,7 @@ body .main .add_book_top-nav .add_book_body .book_details_container .form .right
   align-items: center;
   transition: transform 0.3s;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .right .field .dragBox input[type=file] {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .right .field .dragBox input[type=file] {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -568,65 +730,65 @@ body .main .add_book_top-nav .add_book_body .book_details_container .form .right
   top: 0;
   left: 0;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .right .field .draging {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .right .field .draging {
   transform: scale(1.1);
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .right .field #preview {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .right .field #preview {
   text-align: center;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .right .field #preview img {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .right .field #preview img {
   max-width: 100%;
 }
-body .main .add_book_top-nav .add_book_body .book_details_container .form .right .field textarea {
+body .main .container .add_book_top-nav .add_book_body .book_details_container .form .right .field textarea {
   border: 1px solid #C1BBEB;
   padding: 0.4rem;
 }
-body .main .library_top-nav {
+body .main .container .library_top-nav {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
   padding: 2rem 2rem;
 }
-body .main .library_top-nav .library_header {
+body .main .container .library_top-nav .library_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .main .library_top-nav .library_header .left {
+body .main .container .library_top-nav .library_header .left {
   padding: 1rem;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-body .main .library_top-nav .library_header .left a .back-arrow {
+body .main .container .library_top-nav .library_header .left a .back-arrow {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background-color: #D9D9D9;
 }
-body .main .library_top-nav .library_header .left a .back-arrow i {
+body .main .container .library_top-nav .library_header .left a .back-arrow i {
   position: relative;
   top: 9%;
   left: 30%;
   color: #515151;
 }
-body .main .library_top-nav .library_header .left h2 {
+body .main .container .library_top-nav .library_header .left h2 {
   margin-left: 1rem;
   margin-top: 0.4rem;
   text-transform: uppercase;
   font-weight: 750;
   color: #222A49;
 }
-body .main .library_top-nav .library_header .icons {
+body .main .container .library_top-nav .library_header .icons {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
-body .main .library_top-nav .library_header .icons a {
+body .main .container .library_top-nav .library_header .icons a {
   text-decoration: none;
 }
-body .main .library_top-nav .library_header .icons a .add-icon {
+body .main .container .library_top-nav .library_header .icons a .add-icon {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -635,20 +797,20 @@ body .main .library_top-nav .library_header .icons a .add-icon {
   align-items: center;
   background-color: #34A853;
 }
-body .main .library_top-nav .library_header .icons a .add-icon i {
+body .main .container .library_top-nav .library_header .icons a .add-icon i {
   color: #fff;
   font-size: 20px;
 }
-body .main .library_top-nav .library_header .icons .search {
+body .main .container .library_top-nav .library_header .icons .search {
   background-color: #fff;
   border-radius: 20px;
   padding: 0.6rem 1rem;
 }
-body .main .library_top-nav .library_header .icons .search i {
+body .main .container .library_top-nav .library_header .icons .search i {
   margin: 0 1rem;
   color: #34A853;
 }
-body .main .library_top-nav .library_header .icons .notification {
+body .main .container .library_top-nav .library_header .icons .notification {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -657,11 +819,11 @@ body .main .library_top-nav .library_header .icons .notification {
   align-items: center;
   background-color: #fff;
 }
-body .main .library_top-nav .library_header .icons .notification i {
+body .main .container .library_top-nav .library_header .icons .notification i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .library_top-nav .library_header .icons .setting {
+body .main .container .library_top-nav .library_header .icons .setting {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -670,31 +832,31 @@ body .main .library_top-nav .library_header .icons .setting {
   align-items: center;
   background-color: #fff;
 }
-body .main .library_top-nav .library_header .icons .setting i {
+body .main .container .library_top-nav .library_header .icons .setting i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .library_top-nav .library_all_suggestions_body {
+body .main .container .library_top-nav .library_all_suggestions_body {
   padding: 2rem 1rem;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .header {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .header {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .header h4 {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .header h4 {
   font-weight: 500;
   font-size: 32px;
   color: #475073;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -704,62 +866,62 @@ body .main .library_top-nav .library_all_suggestions_body .library_all_suggestio
   width: 95%;
   border-radius: 20px 20px 0 0;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .book {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .book {
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .book img {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .book img {
   height: 700px;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .book_details_body {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .book_details_body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .book_details_body i {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .book_details_body i {
   font-size: 35px;
   color: #0B8C7C;
   margin-left: 2rem;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .book_details_body .book_title {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .book_details_body .book_title {
   font-weight: 600;
   font-size: 42px;
   color: #202020;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .author {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .author {
   font-weight: 400;
   font-size: 26px;
   color: #0B8C7C;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .action-buttons {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .action-buttons {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .action-buttons button {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .action-buttons button {
   padding: 4px 12px;
   border-radius: 20px;
   background-color: #665230;
   color: #F9C975;
   transition: 0.5s ease-in-out;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .action-buttons button:hover {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .action-buttons button:hover {
   background-color: #F9C975;
   color: #212121;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .extract {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .extract {
   text-align: justify;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .cta-buttons {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .cta-buttons {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .cta-buttons .cont {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .cta-buttons .cont {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -769,68 +931,68 @@ body .main .library_top-nav .library_all_suggestions_body .library_all_suggestio
   height: 80px;
   background-color: #084C1A;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .cta-buttons .cont button {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .cta-buttons .cont button {
   padding: 4px 12px;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .cta-buttons .cont .atc {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .cta-buttons .cont .atc {
   background-color: #084C1A;
   border: 2px solid #fff;
   color: #fff;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .cta-buttons .cont .atc:hover {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .cta-buttons .cont .atc:hover {
   background-color: #fff;
   color: #212121;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .cta-buttons .cont .read {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .book_details_container .cta-buttons .cont .read {
   padding: 6px 46px;
   background-color: #fff;
 }
-body .main .library_top-nav {
+body .main .container .library_top-nav {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
   padding: 2rem 2rem;
 }
-body .main .library_top-nav .library_header {
+body .main .container .library_top-nav .library_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .main .library_top-nav .library_header .left {
+body .main .container .library_top-nav .library_header .left {
   padding: 1rem;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-body .main .library_top-nav .library_header .left a .back-arrow {
+body .main .container .library_top-nav .library_header .left a .back-arrow {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background-color: #D9D9D9;
 }
-body .main .library_top-nav .library_header .left a .back-arrow i {
+body .main .container .library_top-nav .library_header .left a .back-arrow i {
   position: relative;
   top: 9%;
   left: 30%;
   color: #515151;
 }
-body .main .library_top-nav .library_header .left h2 {
+body .main .container .library_top-nav .library_header .left h2 {
   margin-left: 1rem;
   margin-top: 0.4rem;
   text-transform: uppercase;
   font-weight: 750;
   color: #222A49;
 }
-body .main .library_top-nav .library_header .icons {
+body .main .container .library_top-nav .library_header .icons {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
-body .main .library_top-nav .library_header .icons a {
+body .main .container .library_top-nav .library_header .icons a {
   text-decoration: none;
 }
-body .main .library_top-nav .library_header .icons a .add-icon {
+body .main .container .library_top-nav .library_header .icons a .add-icon {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -839,20 +1001,20 @@ body .main .library_top-nav .library_header .icons a .add-icon {
   align-items: center;
   background-color: #34A853;
 }
-body .main .library_top-nav .library_header .icons a .add-icon i {
+body .main .container .library_top-nav .library_header .icons a .add-icon i {
   color: #fff;
   font-size: 20px;
 }
-body .main .library_top-nav .library_header .icons .search {
+body .main .container .library_top-nav .library_header .icons .search {
   background-color: #fff;
   border-radius: 20px;
   padding: 0.6rem 1rem;
 }
-body .main .library_top-nav .library_header .icons .search i {
+body .main .container .library_top-nav .library_header .icons .search i {
   margin: 0 1rem;
   color: #34A853;
 }
-body .main .library_top-nav .library_header .icons .notification {
+body .main .container .library_top-nav .library_header .icons .notification {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -861,11 +1023,11 @@ body .main .library_top-nav .library_header .icons .notification {
   align-items: center;
   background-color: #fff;
 }
-body .main .library_top-nav .library_header .icons .notification i {
+body .main .container .library_top-nav .library_header .icons .notification i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .library_top-nav .library_header .icons .setting {
+body .main .container .library_top-nav .library_header .icons .setting {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -874,31 +1036,31 @@ body .main .library_top-nav .library_header .icons .setting {
   align-items: center;
   background-color: #fff;
 }
-body .main .library_top-nav .library_header .icons .setting i {
+body .main .container .library_top-nav .library_header .icons .setting i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .library_top-nav .library_all_suggestions_body {
+body .main .container .library_top-nav .library_all_suggestions_body {
   padding: 2rem 1rem;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .header {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .header {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .header h4 {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .header h4 {
   font-weight: 500;
   font-size: 32px;
   color: #475073;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .suggested_books {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .suggested_books {
   grid-template-columns: repeat(4, minmax(0px, 1fr));
   grid-column-gap: 30px;
   grid-row-gap: 30px;
@@ -909,46 +1071,46 @@ body .main .library_top-nav .library_all_suggestions_body .library_all_suggestio
   gap: 1rem;
   padding-top: 2rem;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .suggested_books .book {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .suggested_books .book {
   cursor: pointer;
 }
-body .main .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .suggested_books .book img {
+body .main .container .library_top-nav .library_all_suggestions_body .library_all_suggestions_body_suggested .suggested_books .book img {
   height: 400px;
 }
-body .main .library_top-nav {
+body .main .container .library_top-nav {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
   padding: 2rem 2rem;
 }
-body .main .library_top-nav .library_header {
+body .main .container .library_top-nav .library_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .main .library_top-nav .library_header .left {
+body .main .container .library_top-nav .library_header .left {
   padding: 1rem;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-body .main .library_top-nav .library_header .left h2 {
+body .main .container .library_top-nav .library_header .left h2 {
   margin-left: 1rem;
   margin-top: 0.4rem;
   text-transform: uppercase;
   font-weight: 750;
   color: #222A49;
 }
-body .main .library_top-nav .library_header .icons {
+body .main .container .library_top-nav .library_header .icons {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
-body .main .library_top-nav .library_header .icons a {
+body .main .container .library_top-nav .library_header .icons a {
   text-decoration: none;
 }
-body .main .library_top-nav .library_header .icons a .add-icon {
+body .main .container .library_top-nav .library_header .icons a .add-icon {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -957,20 +1119,20 @@ body .main .library_top-nav .library_header .icons a .add-icon {
   align-items: center;
   background-color: #34A853;
 }
-body .main .library_top-nav .library_header .icons a .add-icon i {
+body .main .container .library_top-nav .library_header .icons a .add-icon i {
   color: #fff;
   font-size: 20px;
 }
-body .main .library_top-nav .library_header .icons .search {
+body .main .container .library_top-nav .library_header .icons .search {
   background-color: #fff;
   border-radius: 20px;
   padding: 0.6rem 1rem;
 }
-body .main .library_top-nav .library_header .icons .search i {
+body .main .container .library_top-nav .library_header .icons .search i {
   margin: 0 1rem;
   color: #34A853;
 }
-body .main .library_top-nav .library_header .icons .notification {
+body .main .container .library_top-nav .library_header .icons .notification {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -979,11 +1141,11 @@ body .main .library_top-nav .library_header .icons .notification {
   align-items: center;
   background-color: #fff;
 }
-body .main .library_top-nav .library_header .icons .notification i {
+body .main .container .library_top-nav .library_header .icons .notification i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .library_top-nav .library_header .icons .setting {
+body .main .container .library_top-nav .library_header .icons .setting {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -992,157 +1154,157 @@ body .main .library_top-nav .library_header .icons .setting {
   align-items: center;
   background-color: #fff;
 }
-body .main .library_top-nav .library_header .icons .setting i {
+body .main .container .library_top-nav .library_header .icons .setting i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .library_top-nav .library_body {
+body .main .container .library_top-nav .library_body {
   padding: 2rem 1rem;
 }
-body .main .library_top-nav .library_body .library_body_suggested {
+body .main .container .library_top-nav .library_body .library_body_suggested {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body .main .library_top-nav .library_body .library_body_suggested .header {
+body .main .container .library_top-nav .library_body .library_body_suggested .header {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-body .main .library_top-nav .library_body .library_body_suggested .header h4 {
+body .main .container .library_top-nav .library_body .library_body_suggested .header h4 {
   font-weight: 500;
   font-size: 32px;
   color: #475073;
 }
-body .main .library_top-nav .library_body .library_body_suggested .suggested_books {
+body .main .container .library_top-nav .library_body .library_body_suggested .suggested_books {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   padding-top: 2rem;
 }
-body .main .library_top-nav .library_body .library_body_suggested .suggested_books .book {
+body .main .container .library_top-nav .library_body .library_body_suggested .suggested_books .book {
   cursor: pointer;
 }
-body .main .library_top-nav .library_body .library_body_suggested .suggested_books .book img {
+body .main .container .library_top-nav .library_body .library_body_suggested .suggested_books .book img {
   height: 400px;
 }
-body .main .library_top-nav .library_body .library_body_suggested .category-menu {
+body .main .container .library_top-nav .library_body .library_body_suggested .category-menu {
   padding-top: 6rem;
   padding-bottom: 1rem;
   width: 100%;
 }
-body .main .library_top-nav .library_body .library_body_suggested .category-menu ul {
+body .main .container .library_top-nav .library_body .library_body_suggested .category-menu ul {
   display: flex;
   flex-direction: row;
   gap: 2.3rem;
 }
-body .main .library_top-nav .library_body .library_body_suggested .category-menu ul li {
+body .main .container .library_top-nav .library_body .library_body_suggested .category-menu ul li {
   border-radius: 15px;
   padding: 0 1rem;
 }
-body .main .library_top-nav .library_body .library_body_suggested .category-menu ul li:hover {
+body .main .container .library_top-nav .library_body .library_body_suggested .category-menu ul li:hover {
   background-color: #34A853;
 }
-body .main .library_top-nav .library_body .library_body_suggested .category-menu ul li:hover a {
+body .main .container .library_top-nav .library_body .library_body_suggested .category-menu ul li:hover a {
   color: #fff;
 }
-body .main .library_top-nav .library_body .library_body_suggested .category-menu ul li a {
+body .main .container .library_top-nav .library_body .library_body_suggested .category-menu ul li a {
   text-decoration: none;
   font-weight: 500;
   font-size: 20px;
   color: #34A853;
 }
-body .main .library_top-nav .library_body .library_body_suggested .book-column {
+body .main .container .library_top-nav .library_body .library_body_suggested .book-column {
   display: flex;
   flex-direction: row;
   width: 100%;
   margin-bottom: 2rem;
 }
-body .main .library_top-nav .library_body .library_body_suggested .book-column .book-image {
+body .main .container .library_top-nav .library_body .library_body_suggested .book-column .book-image {
   margin-right: 1rem;
 }
-body .main .library_top-nav .library_body .library_body_suggested .book-column .book-image img {
+body .main .container .library_top-nav .library_body .library_body_suggested .book-column .book-image img {
   height: 300px;
 }
-body .main .library_top-nav .library_body .library_body_suggested .book-column .description .book-name {
+body .main .container .library_top-nav .library_body .library_body_suggested .book-column .description .book-name {
   font-weight: 600;
   font-size: 36px;
 }
-body .main .library_top-nav .library_body .library_body_suggested .book-column .description .author {
+body .main .container .library_top-nav .library_body .library_body_suggested .book-column .description .author {
   font-weight: 400;
   font-size: 26px;
   color: #0B8C7C;
 }
-body .main .library_top-nav .library_body .library_body_suggested .book-column .description .extract {
+body .main .container .library_top-nav .library_body .library_body_suggested .book-column .description .extract {
   font-weight: 400;
   font-size: 16px;
   color: #2B2B2B;
   max-width: 500px;
   text-align: justify;
 }
-body .main .library_top-nav .library_body .library_body_suggested .book-column .description .price {
+body .main .container .library_top-nav .library_body .library_body_suggested .book-column .description .price {
   font-weight: 700;
   font-size: 26px;
   color: #898989;
 }
-body .main .library_top-nav .library_body .library_body_suggested .book-column .description .action-buttons {
+body .main .container .library_top-nav .library_body .library_body_suggested .book-column .description .action-buttons {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
-body .main .library_top-nav .library_body .library_body_suggested .book-column .description .action-buttons button {
+body .main .container .library_top-nav .library_body .library_body_suggested .book-column .description .action-buttons button {
   padding: 4px 12px;
   background: #665230;
   border-radius: 53px;
   color: #F9C975;
   transition: 0.5s ease-in-out;
 }
-body .main .library_top-nav .library_body .library_body_suggested .book-column .description .action-buttons button:hover {
+body .main .container .library_top-nav .library_body .library_body_suggested .book-column .description .action-buttons button:hover {
   background-color: #F9C975;
   color: #121212;
 }
-body .main .attendance_top-nav {
+body .main .container .attendance_top-nav {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
   padding: 2rem 2rem;
 }
-body .main .attendance_top-nav .attendance_header {
+body .main .container .attendance_top-nav .attendance_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .main .attendance_top-nav .attendance_header .left {
+body .main .container .attendance_top-nav .attendance_header .left {
   padding: 1rem;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-body .main .attendance_top-nav .attendance_header .left h2 {
+body .main .container .attendance_top-nav .attendance_header .left h2 {
   margin-left: 1rem;
   margin-top: 0.4rem;
   text-transform: uppercase;
   font-weight: 750;
   color: #222A49;
 }
-body .main .attendance_top-nav .attendance_header .icons {
+body .main .container .attendance_top-nav .attendance_header .icons {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
-body .main .attendance_top-nav .attendance_header .icons .search {
+body .main .container .attendance_top-nav .attendance_header .icons .search {
   background-color: #fff;
   border-radius: 20px;
   padding: 0.6rem 1rem;
 }
-body .main .attendance_top-nav .attendance_header .icons .search i {
+body .main .container .attendance_top-nav .attendance_header .icons .search i {
   margin: 0 1rem;
   color: #34A853;
 }
-body .main .attendance_top-nav .attendance_header .icons .notification {
+body .main .container .attendance_top-nav .attendance_header .icons .notification {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -1151,11 +1313,11 @@ body .main .attendance_top-nav .attendance_header .icons .notification {
   align-items: center;
   background-color: #fff;
 }
-body .main .attendance_top-nav .attendance_header .icons .notification i {
+body .main .container .attendance_top-nav .attendance_header .icons .notification i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .attendance_top-nav .attendance_header .icons .setting {
+body .main .container .attendance_top-nav .attendance_header .icons .setting {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -1164,67 +1326,67 @@ body .main .attendance_top-nav .attendance_header .icons .setting {
   align-items: center;
   background-color: #fff;
 }
-body .main .attendance_top-nav .attendance_header .icons .setting i {
+body .main .container .attendance_top-nav .attendance_header .icons .setting i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .attendance_top-nav .attendance_body #calendar {
+body .main .container .attendance_top-nav .attendance_body #calendar {
   color: #222A49;
   text-decoration: none;
   margin-top: 2rem;
 }
-body .main .attendance_class_top-nav {
+body .main .container .attendance_class_top-nav {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
   padding: 2rem 2rem;
 }
-body .main .attendance_class_top-nav .attendance_class_header {
+body .main .container .attendance_class_top-nav .attendance_class_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .main .attendance_class_top-nav .attendance_class_header .left {
+body .main .container .attendance_class_top-nav .attendance_class_header .left {
   padding: 1rem;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-body .main .attendance_class_top-nav .attendance_class_header .left a .back-arrow {
+body .main .container .attendance_class_top-nav .attendance_class_header .left a .back-arrow {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background-color: #D9D9D9;
 }
-body .main .attendance_class_top-nav .attendance_class_header .left a .back-arrow i {
+body .main .container .attendance_class_top-nav .attendance_class_header .left a .back-arrow i {
   position: relative;
   top: 9%;
   left: 30%;
   color: #515151;
 }
-body .main .attendance_class_top-nav .attendance_class_header .left h2 {
+body .main .container .attendance_class_top-nav .attendance_class_header .left h2 {
   margin-left: 1rem;
   margin-top: 0.4rem;
   text-transform: uppercase;
   font-weight: 750;
   color: #222A49;
 }
-body .main .attendance_class_top-nav .attendance_class_header .icons {
+body .main .container .attendance_class_top-nav .attendance_class_header .icons {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
-body .main .attendance_class_top-nav .attendance_class_header .icons .search {
+body .main .container .attendance_class_top-nav .attendance_class_header .icons .search {
   background-color: #fff;
   border-radius: 20px;
   padding: 0.6rem 1rem;
 }
-body .main .attendance_class_top-nav .attendance_class_header .icons .search i {
+body .main .container .attendance_class_top-nav .attendance_class_header .icons .search i {
   margin: 0 1rem;
   color: #34A853;
 }
-body .main .attendance_class_top-nav .attendance_class_header .icons .notification {
+body .main .container .attendance_class_top-nav .attendance_class_header .icons .notification {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -1233,11 +1395,11 @@ body .main .attendance_class_top-nav .attendance_class_header .icons .notificati
   align-items: center;
   background-color: #fff;
 }
-body .main .attendance_class_top-nav .attendance_class_header .icons .notification i {
+body .main .container .attendance_class_top-nav .attendance_class_header .icons .notification i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .attendance_class_top-nav .attendance_class_header .icons .setting {
+body .main .container .attendance_class_top-nav .attendance_class_header .icons .setting {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -1246,26 +1408,26 @@ body .main .attendance_class_top-nav .attendance_class_header .icons .setting {
   align-items: center;
   background-color: #fff;
 }
-body .main .attendance_class_top-nav .attendance_class_header .icons .setting i {
+body .main .container .attendance_class_top-nav .attendance_class_header .icons .setting i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .attendance_class_top-nav .attendance_class_body {
+body .main .container .attendance_class_top-nav .attendance_class_body {
   margin-top: 2rem;
 }
-body .main .attendance_class_top-nav .attendance_class_body .date {
+body .main .container .attendance_class_top-nav .attendance_class_body .date {
   color: #222A49;
 }
-body .main .attendance_class_top-nav .attendance_class_body .classes {
+body .main .container .attendance_class_top-nav .attendance_class_body .classes {
   gap: 2rem;
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
 }
-body .main .attendance_class_top-nav .attendance_class_body .classes a {
+body .main .container .attendance_class_top-nav .attendance_class_body .classes a {
   text-decoration: none;
 }
-body .main .attendance_class_top-nav .attendance_class_body .classes a .class {
+body .main .container .attendance_class_top-nav .attendance_class_body .classes a .class {
   height: 150px;
   width: 100%;
   display: flex;
@@ -1274,75 +1436,75 @@ body .main .attendance_class_top-nav .attendance_class_body .classes a .class {
   border-radius: 20px;
   padding: 1rem;
 }
-body .main .attendance_class_top-nav .attendance_class_body .classes a .class h2 {
+body .main .container .attendance_class_top-nav .attendance_class_body .classes a .class h2 {
   font-size: 24px;
   font-weight: 500;
   color: #222A49;
 }
-body .main .attendance_class_top-nav .attendance_class_body .classes a .class img {
+body .main .container .attendance_class_top-nav .attendance_class_body .classes a .class img {
   height: 120px;
 }
-body .main .attendance_class_top-nav .attendance_class_body .classes .blue {
+body .main .container .attendance_class_top-nav .attendance_class_body .classes .blue {
   background-color: #D7C5FF;
 }
-body .main .attendance_class_top-nav .attendance_class_body .classes .gold {
+body .main .container .attendance_class_top-nav .attendance_class_body .classes .gold {
   background-color: #FFC4BC;
 }
-body .main .attendance_class_top-nav .attendance_class_body .classes .cyan {
+body .main .container .attendance_class_top-nav .attendance_class_body .classes .cyan {
   background-color: #EABCFF;
 }
-body .main .attendance_class_students_top-nav {
+body .main .container .attendance_class_students_top-nav {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
   padding: 2rem 2rem;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_header {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_header .left {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_header .left {
   padding: 1rem;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_header .left a .back-arrow {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_header .left a .back-arrow {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background-color: #D9D9D9;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_header .left a .back-arrow i {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_header .left a .back-arrow i {
   position: relative;
   top: 9%;
   left: 30%;
   color: #515151;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_header .left h2 {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_header .left h2 {
   margin-left: 1rem;
   margin-top: 0.4rem;
   text-transform: uppercase;
   font-weight: 750;
   color: #222A49;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_header .icons {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_header .icons {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_header .icons .search {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_header .icons .search {
   background-color: #fff;
   border-radius: 20px;
   padding: 0.6rem 1rem;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_header .icons .search i {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_header .icons .search i {
   margin: 0 1rem;
   color: #34A853;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_header .icons .notification {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_header .icons .notification {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -1351,11 +1513,11 @@ body .main .attendance_class_students_top-nav .attendance_class_students_header 
   align-items: center;
   background-color: #fff;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_header .icons .notification i {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_header .icons .notification i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_header .icons .setting {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_header .icons .setting {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -1364,31 +1526,31 @@ body .main .attendance_class_students_top-nav .attendance_class_students_header 
   align-items: center;
   background-color: #fff;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_header .icons .setting i {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_header .icons .setting i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body {
   margin-top: 2rem;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .date {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .date {
   color: #222A49;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .class {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .class {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .class h1 {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .class h1 {
   font-size: 36px;
   color: #222A49;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .class span {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .class span {
   font-size: 24px;
   color: #596181;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1397,32 +1559,32 @@ body .main .attendance_class_students_top-nav .attendance_class_students_body .t
   background-color: #fff;
   border-radius: 20px;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table .row {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table .row .content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .name {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .name {
   font-size: 20px;
   font-weight: 500;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .student_ID {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .student_ID {
   font-size: 14px;
   font-weight: 400;
   color: #596181;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history {
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .present {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .present {
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -1432,12 +1594,12 @@ body .main .attendance_class_students_top-nav .attendance_class_students_body .t
   border: 2px solid #34A853;
   transition: 0.4s ease-in-out;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .present:hover {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .present:hover {
   background-color: #34A853;
   color: #fff;
   cursor: pointer;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .absent {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .absent {
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -1447,12 +1609,12 @@ body .main .attendance_class_students_top-nav .attendance_class_students_body .t
   border: 2px solid #EB0909;
   transition: 0.4s ease-in-out;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .absent:hover {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .absent:hover {
   background-color: #EB0909;
   color: #fff;
   cursor: pointer;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .sick {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .sick {
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -1462,79 +1624,79 @@ body .main .attendance_class_students_top-nav .attendance_class_students_body .t
   border: 2px solid #424242;
   transition: 0.4s ease-in-out;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .sick:hover {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .sick:hover {
   background-color: #424242;
   color: #fff;
   cursor: pointer;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .p_active {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .p_active {
   background-color: #34A853;
   color: #fff;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .a_active {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .a_active {
   background-color: #EB0909;
   color: #fff;
 }
-body .main .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .s_active {
+body .main .container .attendance_class_students_top-nav .attendance_class_students_body .table .row .content .attendance_history .s_active {
   background-color: #424242;
   color: #fff;
 }
-body .main .mastersheet_school_fee-full-detail {
+body .main .container .mastersheet_school_fee-full-detail {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
   padding: 2rem 2rem;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header .left {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header .left {
   padding: 1rem;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header .left a .back-arrow {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header .left a .back-arrow {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background-color: #D9D9D9;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header .left a .back-arrow i {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header .left a .back-arrow i {
   position: relative;
   top: 9%;
   left: 30%;
   color: #515151;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header .left h2 {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header .left h2 {
   margin-left: 1rem;
   margin-top: 0.4rem;
   text-transform: uppercase;
   font-weight: 750;
   color: #222A49;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header .icons {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header .icons {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header .icons .search {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header .icons .search {
   background-color: #fff;
   border-radius: 20px;
   padding: 0.6rem 1rem;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header .icons .search i {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_header .icons .search i {
   margin: 0 1rem;
   color: #34A853;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile {
   display: flex;
   flex-direction: column;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile .profile-picture {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile .profile-picture {
   height: 150px;
   width: 150px;
   position: absolute;
@@ -1544,12 +1706,12 @@ body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-deta
   margin-left: 50px;
   margin-top: 50px;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile .cover-section {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile .cover-section {
   height: 10rem;
   background-color: #34A853;
   border-radius: 22px 22px 0 0;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile .cover-section .red {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile .cover-section .red {
   transform: translate(-50%, -50%);
   height: 70px;
   width: 150px;
@@ -1560,7 +1722,7 @@ body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-deta
   right: 20%;
   top: 273px;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile .cover-section .orange {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile .cover-section .orange {
   transform: translate(-50%, -50%);
   height: 100px;
   width: 200px;
@@ -1571,7 +1733,7 @@ body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-deta
   right: 10%;
   top: 258px;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile .hero-section {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile .hero-section {
   border-radius: 0 0 22px 22px;
   height: 6rem;
   display: flex;
@@ -1582,126 +1744,126 @@ body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-deta
   padding-top: 3rem;
   background-color: #fff;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile .hero-section .name {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile .hero-section .name {
   color: #222A49;
 }
-body .main .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile .hero-section h4 {
+body .main .container .mastersheet_school_fee-full-detail .mastersheet_school_fee-full-detail_profile .hero-section h4 {
   color: #4D44B5;
 }
-body .main .mastersheet_school_fee-full-detail .body-section {
+body .main .container .mastersheet_school_fee-full-detail .body-section {
   border-radius: 22px 22px 0 0;
   background-color: #fff;
   margin-top: 2rem;
   padding: 2rem;
 }
-body .main .mastersheet_school_fee-full-detail .body-section .hero .term-fee {
+body .main .container .mastersheet_school_fee-full-detail .body-section .hero .term-fee {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-body .main .mastersheet_school_fee-full-detail .body-section .hero .term-fee h4 {
+body .main .container .mastersheet_school_fee-full-detail .body-section .hero .term-fee h4 {
   color: #596181;
   font-weight: 700;
 }
-body .main .mastersheet_school_fee-full-detail .body-section .hero .term-fee h3 {
+body .main .container .mastersheet_school_fee-full-detail .body-section .hero .term-fee h3 {
   color: #596181;
   font-weight: 700;
 }
-body .main .mastersheet_school_fee-full-detail .body-section .hero .data-row {
+body .main .container .mastersheet_school_fee-full-detail .body-section .hero .data-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-body .main .mastersheet_school_fee-full-detail .body-section .hero .data-row .left {
+body .main .container .mastersheet_school_fee-full-detail .body-section .hero .data-row .left {
   flex: 2;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-body .main .mastersheet_school_fee-full-detail .body-section .hero .data-row .left p {
+body .main .container .mastersheet_school_fee-full-detail .body-section .hero .data-row .left p {
   color: #596181;
 }
-body .main .mastersheet_school_fee-full-detail .body-section .hero .data-row .left .date {
+body .main .container .mastersheet_school_fee-full-detail .body-section .hero .data-row .left .date {
   margin-right: 4rem;
   color: #4D44B5;
 }
-body .main .mastersheet_school_fee-full-detail .body-section .hero .data-row .right {
+body .main .container .mastersheet_school_fee-full-detail .body-section .hero .data-row .right {
   flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-body .main .mastersheet_school_fee-full-detail .body-section .hero .data-row .right p {
+body .main .container .mastersheet_school_fee-full-detail .body-section .hero .data-row .right p {
   color: #596181;
 }
-body .main .mastersheet_school_fee-full-detail .body-section .hero .data-row .right h3 {
+body .main .container .mastersheet_school_fee-full-detail .body-section .hero .data-row .right h3 {
   color: #DF142D;
 }
-body .main .mastersheet_school_fee-class-detail {
+body .main .container .mastersheet_school_fee-class-detail {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
   padding: 2rem 2rem;
 }
-body .main .mastersheet_school_fee-class-detail .blue {
+body .main .container .mastersheet_school_fee-class-detail .blue {
   background-color: #E4D8FF;
 }
-body .main .mastersheet_school_fee-class-detail .grey {
+body .main .container .mastersheet_school_fee-class-detail .grey {
   background-color: #FFD8D8;
 }
-body .main .mastersheet_school_fee-class-detail .cyan {
+body .main .container .mastersheet_school_fee-class-detail .cyan {
   background-color: #D8FFE7;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .left {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .left {
   padding: 1rem;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .left a .back-arrow {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .left a .back-arrow {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background-color: #D9D9D9;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .left a .back-arrow i {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .left a .back-arrow i {
   position: relative;
   top: 9%;
   left: 30%;
   color: #515151;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .left h2 {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .left h2 {
   margin-left: 1rem;
   margin-top: 0.4rem;
   text-transform: uppercase;
   font-weight: 750;
   color: #222A49;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .search {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .search {
   background-color: #fff;
   border-radius: 20px;
   padding: 0.6rem 1rem;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .search i {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .search i {
   margin: 0 1rem;
   color: #34A853;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .notification {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .notification {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -1710,11 +1872,11 @@ body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-de
   align-items: center;
   background-color: #fff;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .notification i {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .notification i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .setting {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .setting {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -1723,14 +1885,14 @@ body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-de
   align-items: center;
   background-color: #fff;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .setting i {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-class-detail_header .icons .setting i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .mastersheet_school_fee-class-detail .header {
+body .main .container .mastersheet_school_fee-class-detail .header {
   color: #222A49;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1738,181 +1900,181 @@ body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_
   padding: 1.5rem;
   margin-top: 2rem;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .hero-section {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .hero-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 1rem;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .hero-section h4 {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .hero-section h4 {
   color: #222A49;
   font-weight: bold;
   padding-bottom: 1rem;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .hero-section a {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .hero-section a {
   text-decoration: none;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item {
   background-color: #fff;
   padding: 2rem;
   border-radius: 20px;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section {
   display: flex;
   flex-direction: column;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left {
   flex: 1;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .title {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .title {
   color: #DF142D;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .title h2 {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .title h2 {
   font-weight: bolder;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row {
   display: flex;
   flex-direction: row;
   padding: 2rem 2rem;
   align-items: center;
   justify-content: center;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row .picture {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row .picture {
   height: 48px;
   width: 48px;
   background-color: #C1BBEB;
   border-radius: 40px;
   margin-right: 2rem;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row .student_name {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row .student_name {
   flex: 2;
   font-size: 20px;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row .student_ID {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row .student_ID {
   flex: 2;
   font-size: 20px;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row a {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row a {
   text-decoration: none;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row a .full-detail-btn {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row a .full-detail-btn {
   background-color: #34A853;
   border-radius: 20px;
   color: #fff;
   padding: 0.6rem 1rem;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row a .full-detail-btn:hover {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .left .data-row a .full-detail-btn:hover {
   background-color: rgb(255, 175, 175);
   color: #34A853;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right {
   flex: 1;
   margin-top: 1rem;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .title {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .title {
   color: #34A853;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .title h2 {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .title h2 {
   font-weight: bolder;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row {
   display: flex;
   flex-direction: row;
   padding: 2rem 2rem;
   align-items: center;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row .picture {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row .picture {
   height: 48px;
   width: 48px;
   background-color: #C1BBEB;
   border-radius: 40px;
   margin-right: 2rem;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row .student_name {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row .student_name {
   flex: 2;
   font-size: 20px;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row .student_ID {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row .student_ID {
   flex: 2;
   font-size: 20px;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row a {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row a {
   text-decoration: none;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row a .full-detail-btn {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row a .full-detail-btn {
   background-color: #34A853;
   border-radius: 20px;
   color: #fff;
   padding: 0.6rem 1rem;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row a .full-detail-btn:hover {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right .data-row a .full-detail-btn:hover {
   background-color: rgb(255, 175, 175);
   color: #34A853;
 }
-body .main .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right {
+body .main .container .mastersheet_school_fee-class-detail .mastersheet_school_fee-details_body_class .body-item .content-section .right {
   flex: 1;
 }
-body .main .mastersheet_school_fee-details {
+body .main .container .mastersheet_school_fee-details {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
   padding: 2rem 2rem;
 }
-body .main .mastersheet_school_fee-details .blue {
+body .main .container .mastersheet_school_fee-details .blue {
   background-color: #E4D8FF;
 }
-body .main .mastersheet_school_fee-details .grey {
+body .main .container .mastersheet_school_fee-details .grey {
   background-color: #FFD8D8;
 }
-body .main .mastersheet_school_fee-details .cyan {
+body .main .container .mastersheet_school_fee-details .cyan {
   background-color: #D8FFE7;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .left {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_header .left {
   padding: 1rem;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .left a .back-arrow {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_header .left a .back-arrow {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background-color: #D9D9D9;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .left a .back-arrow i {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_header .left a .back-arrow i {
   position: relative;
   top: 9%;
   left: 30%;
   color: #515151;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .left h2 {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_header .left h2 {
   margin-left: 1rem;
   margin-top: 0.4rem;
   text-transform: uppercase;
   font-weight: 750;
   color: #222A49;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .search {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .search {
   background-color: #fff;
   border-radius: 20px;
   padding: 0.6rem 1rem;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .search i {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .search i {
   margin: 0 1rem;
   color: #34A853;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .notification {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .notification {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -1921,11 +2083,11 @@ body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_heade
   align-items: center;
   background-color: #fff;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .notification i {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .notification i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .setting {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .setting {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -1934,14 +2096,14 @@ body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_heade
   align-items: center;
   background-color: #fff;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .setting i {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_header .icons .setting i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .mastersheet_school_fee-details .header {
+body .main .container .mastersheet_school_fee-details .header {
   color: #222A49;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1949,104 +2111,104 @@ body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body 
   padding: 1.5rem;
   margin-top: 2rem;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .hero-section {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .hero-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 1rem;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .hero-section h4 {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .hero-section h4 {
   color: #222A49;
   font-weight: bold;
   padding-bottom: 1rem;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .hero-section a {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .hero-section a {
   text-decoration: none;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item {
   background-color: #fff;
   padding: 2rem;
   border-radius: 20px;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section {
   display: flex;
   flex-direction: row;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left {
   flex: 1;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .title {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .title {
   color: #DF142D;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .title h2 {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .title h2 {
   font-weight: bolder;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .data-row {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .data-row {
   display: flex;
   flex-direction: row;
   padding: 2rem 0;
   align-items: center;
   justify-content: center;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .data-row .picture {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .data-row .picture {
   height: 48px;
   width: 48px;
   background-color: #C1BBEB;
   border-radius: 40px;
   margin-right: 2rem;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .data-row .student_name {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .data-row .student_name {
   flex: 2;
   font-size: 20px;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .data-row .student_ID {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .left .data-row .student_ID {
   flex: 2;
   font-size: 20px;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right {
   flex: 1;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .title {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .title {
   color: #34A853;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .title h2 {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .title h2 {
   font-weight: bolder;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .data-row {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .data-row {
   display: flex;
   flex-direction: row;
   padding: 2rem 0;
   align-items: center;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .data-row .picture {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .data-row .picture {
   height: 48px;
   width: 48px;
   background-color: #C1BBEB;
   border-radius: 40px;
   margin-right: 2rem;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .data-row .student_name {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .data-row .student_name {
   flex: 2;
   font-size: 20px;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .data-row .student_ID {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right .data-row .student_ID {
   flex: 2;
   font-size: 20px;
 }
-body .main .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right {
+body .main .container .mastersheet_school_fee-details .mastersheet_school_fee-details_body .body-item .content-section .right {
   flex: 1;
 }
-body .main .mastersheet_fee-details {
+body .main .container .mastersheet_fee-details {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
   padding: 2rem 2rem;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_header {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_header h2 {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_header h2 {
   color: #222A49;
   margin-left: 1rem;
   margin-top: 0.4rem;
@@ -2054,23 +2216,23 @@ body .main .mastersheet_fee-details .mastersheet_fee-details_header h2 {
   font-weight: 750;
   color: #222A49;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_header .icons {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons .search {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_header .icons .search {
   background-color: #fff;
   border-radius: 20px;
   padding: 0.6rem 1rem;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons .search i {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_header .icons .search i {
   margin: 0 1rem;
   color: #34A853;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons .notification {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_header .icons .notification {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -2079,11 +2241,11 @@ body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons .noti
   align-items: center;
   background-color: #fff;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons .notification i {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_header .icons .notification i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons .setting {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_header .icons .setting {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 20px;
@@ -2092,29 +2254,29 @@ body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons .sett
   align-items: center;
   background-color: #fff;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_header .icons .setting i {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_header .icons .setting i {
   color: #34A853;
   font-size: 20px;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_fields {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_fields {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin: 2rem 0;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_fields .blue {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_fields .blue {
   background-color: #E4D8FF;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_fields .grey {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_fields .grey {
   background-color: #FFD8D8;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_fields .cyan {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_fields .cyan {
   background-color: #D8FFE7;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_fields a {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_fields a {
   text-decoration: none;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_fields a .fee-item {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_fields a .fee-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2123,18 +2285,18 @@ body .main .mastersheet_fee-details .mastersheet_fee-details_fields a .fee-item 
   border-radius: 20px;
   margin: 0 1rem;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_fields a .fee-item h6 {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_fields a .fee-item h6 {
   color: #596181;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_fields a .fee-item p {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_fields a .fee-item p {
   color: #596181;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-component {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_fields .fee-component {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-component .fee-item {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_fields .fee-component .fee-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2144,32 +2306,32 @@ body .main .mastersheet_fee-details .mastersheet_fee-details_fields .fee-compone
   margin: 0 1rem;
   flex: 1;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_graph {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_graph {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body .main .mastersheet_fee-details .mastersheet_fee-details_graph div {
+body .main .container .mastersheet_fee-details .mastersheet_fee-details_graph div {
   border-radius: 15px;
 }
-body .main .content {
+body .main .container .content {
   margin-top: 2rem;
 }
-body .main .content .contr {
+body .main .container .content .contr {
   background-color: #FFD8D8;
   padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-body .main .content .contr .upp {
+body .main .container .content .contr .upp {
   display: flex;
   flex-direction: row;
   background-color: #FFD8D8;
   justify-content: space-between;
 }
-body .main .content .contr .upp .image-holde {
+body .main .container .content .contr .upp .image-holde {
   height: 250px;
   width: 260px;
   color: #fff;
@@ -2178,50 +2340,50 @@ body .main .content .contr .upp .image-holde {
   align-items: center;
   justify-content: center;
 }
-body .main .content .contr .upp .image-holde img {
+body .main .container .content .contr .upp .image-holde img {
   height: 100%;
   width: 100%;
   overflow: hidden;
   margin: 0.8rem 0 0 1rem;
 }
-body .main .content .contr .upp .input {
+body .main .container .content .contr .upp .input {
   display: flex;
   flex-direction: column;
   background-color: #FFD8D8;
   gap: 15px;
 }
-body .main .content .contr .upp .input input {
+body .main .container .content .contr .upp .input input {
   border-radius: 20px;
   height: 30px;
   width: 950px;
   padding: 0 20px;
 }
-body .main .content .contr .text-areaa textarea {
+body .main .container .content .contr .text-areaa textarea {
   padding: 1rem;
   width: 100%;
   border-radius: 22px;
 }
-body .main .content .contr .submit button {
+body .main .container .content .contr .submit button {
   background: #34A853;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-weight: 700;
 }
-body .main .content .cont {
+body .main .container .content .cont {
   background-color: #b2e0bf;
   padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-body .main .content .cont .up {
+body .main .container .content .cont .up {
   display: flex;
   flex-direction: row;
   background-color: #b2e0bf;
   justify-content: space-between;
 }
-body .main .content .cont .up .image-holder {
+body .main .container .content .cont .up .image-holder {
   height: 210px;
   width: 190px;
   background-color: #34A853;
@@ -2231,244 +2393,244 @@ body .main .content .cont .up .image-holder {
   align-items: center;
   justify-content: center;
 }
-body .main .content .cont .up .inputs {
+body .main .container .content .cont .up .inputs {
   display: flex;
   flex-direction: column;
   background-color: #b2e0bf;
   gap: 15px;
 }
-body .main .content .cont .up .inputs input {
+body .main .container .content .cont .up .inputs input {
   border-radius: 20px;
   height: 30px;
   width: 950px;
   padding: 0 20px;
 }
-body .main .content .cont .text-area textarea {
+body .main .container .content .cont .text-area textarea {
   padding: 1rem;
   width: 100%;
   border-radius: 22px;
 }
-body .main .content .cont .submit button {
+body .main .container .content .cont .submit button {
   background: #34A853;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-weight: 700;
 }
-body .main .content .bg {
+body .main .container .content .bg {
   background-color: #F8F8F8;
   width: 100%;
   padding-bottom: 5rem;
   padding-top: 1rem;
 }
-body .main .content .bg .top {
+body .main .container .content .bg .top {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   background-color: #F8F8F8;
 }
-body .main .content .bg .top .left {
+body .main .container .content .bg .top .left {
   padding: 1rem;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-body .main .content .bg .top .left a .back-arrow {
+body .main .container .content .bg .top .left a .back-arrow {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background-color: #D9D9D9;
 }
-body .main .content .bg .top .left a .back-arrow i {
+body .main .container .content .bg .top .left a .back-arrow i {
   position: relative;
   top: 9%;
   left: 30%;
   color: #515151;
 }
-body .main .content .bg .top .left h2 {
+body .main .container .content .bg .top .left h2 {
   margin-left: 1rem;
   margin-top: 0.4rem;
   text-transform: uppercase;
   font-weight: 750;
   color: #222A49;
 }
-body .main .content .bg .top .right {
+body .main .container .content .bg .top .right {
   display: flex;
   align-items: center;
   flex-direction: row;
   padding: 1rem;
 }
-body .main .content .bg .top .right .btn {
+body .main .container .content .bg .top .right .btn {
   background-color: #34A853;
   margin-right: 1rem;
   border-radius: 20px;
   padding: 0.5rem 1rem;
 }
-body .main .content .bg .top .right .btn span {
+body .main .container .content .bg .top .right .btn span {
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
 }
-body .main .content .bg .top .right .btn:hover {
+body .main .container .content .bg .top .right .btn:hover {
   background-color: #46DB6E;
 }
-body .main .content .bg .top .right .search {
+body .main .container .content .bg .top .right .search {
   background-color: #fff;
   border-radius: 20px;
   padding: 0.6rem 1rem;
 }
-body .main .content .bg .top .right .search i {
+body .main .container .content .bg .top .right .search i {
   margin: 0 1rem;
   color: #34A853;
 }
-body .main .content .top {
+body .main .container .content .top {
   background-color: #fff;
   display: flex;
   flex-direction: column;
 }
-body .main .content .top .first-col {
+body .main .container .content .top .first-col {
   margin: 1rem 3rem 0 3rem;
   display: flex;
   justify-content: space-between;
 }
-body .main .content .top .first-col .wlc-btn {
+body .main .container .content .top .first-col .wlc-btn {
   padding: 0.2rem 0.5rem;
   color: #fff;
   background-color: #222A49;
 }
-body .main .content .top .first-col img {
+body .main .container .content .top .first-col img {
   height: 50px;
 }
-body .main .content .top .second-col {
+body .main .container .content .top .second-col {
   margin: 0.5rem 3rem 0.5rem 3rem;
   overflow: hidden;
   height: 200px;
 }
-body .main .content .top .second-col img {
+body .main .container .content .top .second-col img {
   width: 100%;
   height: 190px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-body .main .content .top .third-col {
+body .main .container .content .top .third-col {
   margin: 0.5rem 3rem 1rem 3rem;
   display: flex;
   flex-direction: row;
   gap: 10px;
   justify-content: center;
 }
-body .main .content .top .third-col .box-card {
+body .main .container .content .top .third-col .box-card {
   padding: 2rem;
   height: 156px;
   width: 232px;
   border: 2px solid #A6A6A6;
   background-color: #A6A6A6;
 }
-body .main .content .top .third-col .box-card h1 {
+body .main .container .content .top .third-col .box-card h1 {
   color: #475073;
 }
-body .main .content .top .third-col .box-card p {
+body .main .container .content .top .third-col .box-card p {
   color: #596181;
 }
-body .main .content .cards {
+body .main .container .content .cards {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 50px;
   margin-top: 3rem;
 }
-body .main .content .cards .school-card {
+body .main .container .content .cards .school-card {
   width: 500px;
   background-color: #FFD8D8;
   padding: 2rem 1rem;
 }
-body .main .content .cards .school-card .header {
+body .main .container .content .cards .school-card .header {
   display: flex;
   flex-direction: row;
 }
-body .main .content .cards .school-card .header img {
+body .main .container .content .cards .school-card .header img {
   height: 198px;
 }
-body .main .content .cards .school-card .header h2 {
+body .main .container .content .cards .school-card .header h2 {
   text-transform: uppercase;
   color: #596181;
   font-weight: 700;
 }
-body .main .content .cards .school-card .header h4 {
+body .main .container .content .cards .school-card .header h4 {
   text-transform: uppercase;
   color: #596181;
   font-size: 15px;
 }
-body .main .content .cards .school-card .info p {
+body .main .container .content .cards .school-card .info p {
   color: #515874;
 }
-body .main .content .cards .school-card .info .foot {
+body .main .container .content .cards .school-card .info .foot {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-body .main .content .cards .school-card .info .foot .date {
+body .main .container .content .cards .school-card .info .foot .date {
   color: #505050;
   text-transform: uppercase;
   font-weight: 700;
 }
-body .main .content .cards .school-card .info .foot button {
+body .main .container .content .cards .school-card .info .foot button {
   background-color: #DF142D;
   color: #fff;
   padding: 0.5rem 1.5rem;
 }
-body .main .content .buttom {
+body .main .container .content .buttom {
   margin-top: 2rem;
 }
-body .main .content .buttom .head {
+body .main .container .content .buttom .head {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
 }
-body .main .content .buttom .head h3 {
+body .main .container .content .buttom .head h3 {
   color: #fff;
 }
-body .main .content .buttom .head p a {
+body .main .container .content .buttom .head p a {
   text-decoration: none;
   color: #fff;
 }
-body .main .content .buttom .content {
+body .main .container .content .buttom .content {
   display: flex;
   flex-direction: row;
   gap: 25px;
   margin-top: 0;
 }
-body .main .content .buttom .content .school-card {
+body .main .container .content .buttom .content .school-card {
   width: 422px;
   height: 180px;
   background-color: #fff;
   overflow: hidden;
 }
-body .main .content .buttom .content .school-card .container {
+body .main .container .content .buttom .content .school-card .container {
   padding-top: 0.7rem;
   display: flex;
   flex-direction: row;
 }
-body .main .content .buttom .content .school-card .container img {
+body .main .container .content .buttom .content .school-card .container img {
   height: 190px;
 }
-body .main .content .buttom .content .school-card .container .info .notice {
+body .main .container .content .buttom .content .school-card .container .info .notice {
   margin-bottom: 0;
   text-transform: uppercase;
   font-size: 12px;
   color: #596181;
 }
-body .main .content .buttom .content .school-card .container .info h2 {
+body .main .container .content .buttom .content .school-card .container .info h2 {
   color: #475073;
   font-size: 20px;
   text-transform: uppercase;
 }
-body .main .content .buttom .content .school-card .container .info .details {
+body .main .container .content .buttom .content .school-card .container .info .details {
   font-size: 14px;
   color: #596181;
 }
-body .main .content .buttom .content .school-card .container .info button {
+body .main .container .content .buttom .content .school-card .container .info button {
   margin-left: 68%;
   padding: 0.2rem 0.8rem;
   background-color: #FDF1F2;

@@ -17,7 +17,7 @@ function drop() {
 }
 
 
-
+// Sise Bar Mechanics
 
 $("nav").hover(function() {
   $(".profile_image").attr("src","../../Utils/images/MASTERSHEET-White 1.png");
@@ -60,4 +60,10 @@ $("nav").mouseleave(function() {
 
 // $(this).css("background-color","red")
 
- 
+//  Course Matherial drawer
+
+$(".Upload_course_1").on("click", function(){ 
+  $("#upload_details").css("display","flex");
+  $(".back-arrow").css("display","block");
+   
+ });
