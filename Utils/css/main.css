@@ -470,13 +470,13 @@ body .main .container .add_book_top-nav .main_container #view_materials .wrapper
 body .main .container .add_book_top-nav .main_container #view_materials .wrapper nav label:hover {
   background: rgba(104, 255, 84, 0.3);
 }
-body .main .container .add_book_top-nav .main_container #view_materials #all:checked ~ nav label.home {
+body .main .container .add_book_top-nav .main_container #view_materials #all:checked ~ nav label.all {
   color: #fff;
 }
 body .main .container .add_book_top-nav .main_container #view_materials #all:checked ~ section .content-1 {
   display: block;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #images:checked ~ nav label.blog {
+body .main .container .add_book_top-nav .main_container #view_materials #images:checked ~ nav label.images {
   color: #fff;
 }
 body .main .container .add_book_top-nav .main_container #view_materials #images:checked ~ nav .slider {
@@ -485,7 +485,7 @@ body .main .container .add_book_top-nav .main_container #view_materials #images:
 body .main .container .add_book_top-nav .main_container #view_materials #images:checked ~ section .content-2 {
   display: block;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #doc:checked ~ nav label.code {
+body .main .container .add_book_top-nav .main_container #view_materials #doc:checked ~ nav label.doc {
   color: #fff;
 }
 body .main .container .add_book_top-nav .main_container #view_materials #doc:checked ~ nav .slider {
@@ -494,7 +494,7 @@ body .main .container .add_book_top-nav .main_container #view_materials #doc:che
 body .main .container .add_book_top-nav .main_container #view_materials #doc:checked ~ section .content-3 {
   display: block;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #videos:checked ~ nav label.help {
+body .main .container .add_book_top-nav .main_container #view_materials #videos:checked ~ nav label.videos {
   color: #fff;
 }
 body .main .container .add_book_top-nav .main_container #view_materials #videos:checked ~ nav .slider {
@@ -503,7 +503,7 @@ body .main .container .add_book_top-nav .main_container #view_materials #videos:
 body .main .container .add_book_top-nav .main_container #view_materials #videos:checked ~ section .content-4 {
   display: block;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #others:checked ~ nav label.about {
+body .main .container .add_book_top-nav .main_container #view_materials #others:checked ~ nav label.others {
   color: #fff;
 }
 body .main .container .add_book_top-nav .main_container #view_materials #others:checked ~ nav .slider {

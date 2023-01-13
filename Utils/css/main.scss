@@ -422,7 +422,6 @@ body {
                                         border-radius: 25px;
                                         margin: 0 5px;
                                         transition: all 0.3s ease;
-                        
                                         &:hover {
                                             background: rgba(104, 255, 84, 0.3);
                                         }
@@ -434,7 +433,7 @@ body {
                                 &:checked {
                                     ~ {
                                         nav {
-                                            label.home {
+                                            label.all {
                                                 color: #fff;
                                             }
                                         }
@@ -452,7 +451,7 @@ body {
                                 &:checked {
                                     ~ {
                                         nav {
-                                            label.blog {
+                                            label.images {
                                                 color: #fff;
                                             }
                         
@@ -474,7 +473,7 @@ body {
                                 &:checked {
                                     ~ {
                                         nav {
-                                            label.code {
+                                            label.doc {
                                                 color: #fff;
                                             }
                         
@@ -496,7 +495,7 @@ body {
                                 &:checked {
                                     ~ {
                                         nav {
-                                            label.help {
+                                            label.videos {
                                                 color: #fff;
                                             }
                         
@@ -518,7 +517,7 @@ body {
                                 &:checked {
                                     ~ {
                                         nav {
-                                            label.about {
+                                            label.others {
                                                 color: #fff;
                                             }
                         
