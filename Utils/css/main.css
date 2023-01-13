@@ -537,6 +537,7 @@ body .main .container .add_book_top-nav .main_container #view_materials section 
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   height: 60vh;
   flex-direction: column;
 }
