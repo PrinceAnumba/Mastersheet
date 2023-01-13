@@ -436,7 +436,7 @@ body .main .container .add_book_top-nav .main_container #view_materials .wrapper
   height: 80vh;
   padding: 25px 30px 30px 30px;
   border-radius: 25px;
-  background: #fff;
+  background: #DEDEDE;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 body .main .container .add_book_top-nav .main_container #view_materials .wrapper header {
@@ -531,7 +531,7 @@ body .main .container .add_book_top-nav .main_container #view_materials input[ty
 }
 body .main .container .add_book_top-nav .main_container #view_materials section .content {
   display: none;
-  background: #fff;
+  background: #DEDEDE;
 }
 body .main .container .add_book_top-nav .main_container #view_materials section .content .centered {
   display: flex;
@@ -546,7 +546,7 @@ body .main .container .add_book_top-nav .main_container #view_materials section 
 body .main .container .add_book_top-nav .main_container #view_materials section .content button {
   color: #626262;
   text-align: justify;
-  background-color: #fff;
+  background-color: #DEDEDE;
 }
 body .main .container .add_book_top-nav .main_container #view_materials section .content input[type=file] {
   display: none;
