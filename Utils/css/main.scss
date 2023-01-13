@@ -30,7 +30,7 @@ body {
         transition: 250ms ease-in-out;
     }
 
-    nav {
+    .nav {
         width: 80px;
         height: 100vh;
         background: #34A853;
@@ -42,7 +42,7 @@ body {
         &:hover {
             width: 290px;
 
-            nav {
+            .nav {
                 .navbar {
                     .menu-list {
                         p {
@@ -377,17 +377,20 @@ body {
                     }
 
                     #view_materials {
-
+                        display: none;
+                        position: absolute;
+                        top: 0px;
+                        width: 100%;
                         &::selection {
-                                background: rgba(23, 162, 184, 0.3);
+                                background: $green-button
                             }
                         
                             .wrapper {
                                 max-width: 100%;
                                 width: 100%;
-                                margin: 200px auto;
+                                height: 80vh;
                                 padding: 25px 30px 30px 30px;
-                                border-radius: 5px;
+                                border-radius: 25px;
                                 background: #fff;
                                 box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
                         
@@ -399,10 +402,11 @@ body {
                         
                                 nav {
                                     position: relative;
-                                    width: 80%;
+                                    width: 100%;
                                     height: 50px;
                                     display: flex;
                                     align-items: center;
+                                    justify-content: center;
                         
                                     label {
                                         display: block;
@@ -413,20 +417,20 @@ body {
                                         cursor: pointer;
                                         position: relative;
                                         z-index: 1;
-                                        color: #17a2b8;
+                                        color: #212121;
                                         font-size: 17px;
-                                        border-radius: 5px;
+                                        border-radius: 25px;
                                         margin: 0 5px;
                                         transition: all 0.3s ease;
                         
                                         &:hover {
-                                            background: rgba(23, 162, 184, 0.3);
+                                            background: rgba(104, 255, 84, 0.3);
                                         }
                                     }
                                 }
                             }
                         
-                            #home {
+                            #all {
                                 &:checked {
                                     ~ {
                                         nav {
@@ -444,7 +448,7 @@ body {
                                 }
                             }
                         
-                            #blog {
+                            #images {
                                 &:checked {
                                     ~ {
                                         nav {
@@ -466,7 +470,7 @@ body {
                                 }
                             }
                         
-                            #code {
+                            #doc {
                                 &:checked {
                                     ~ {
                                         nav {
@@ -488,7 +492,7 @@ body {
                                 }
                             }
                         
-                            #help {
+                            #videos {
                                 &:checked {
                                     ~ {
                                         nav {
@@ -510,7 +514,7 @@ body {
                                 }
                             }
                         
-                            #about {
+                            #others {
                                 &:checked {
                                     ~ {
                                         nav {
@@ -546,8 +550,8 @@ body {
                                     left: 0;
                                     bottom: 0;
                                     z-index: 0;
-                                    border-radius: 5px;
-                                    background: #17a2b8;
+                                    border-radius: 25px;
+                                    background: $green-button;
                                     transition: all 0.3s ease;
                                 }
                             }
@@ -560,15 +564,31 @@ body {
                                 .content {
                                     display: none;
                                     background: #fff;
-                        
-                                    .title {
-                                        font-size: 21px;
-                                        font-weight: 500;
-                                        margin: 30px 0 10px 0;
+
+                                    .centered {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        height: 60vh;
+                                        flex-direction: column;
+                                    }
+                                    img{
+                                       width: 100px; 
+                                    }
+
+                                    h3 {
+
                                     }
                         
-                                    p {
+                                    button {
+                                        color: #626262;
                                         text-align: justify;
+                                        background-color: #fff;
+                                    }
+
+                                    input[type="file"] {
+                                        display: none;
+                                            
                                     }
                                 }
                             }
@@ -591,7 +611,7 @@ body {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-        
+
                     .left {
                         padding: 1rem;
                         display: flex;

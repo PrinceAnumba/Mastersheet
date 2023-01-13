@@ -153,7 +153,7 @@ body .left-gap {
   width: 180px;
   transition: 250ms ease-in-out;
 }
-body nav {
+body .nav {
   width: 80px;
   height: 100vh;
   background: #34A853;
@@ -162,70 +162,70 @@ body nav {
   position: fixed;
   left: 60px;
 }
-body nav:hover {
+body .nav:hover {
   width: 290px;
 }
-body nav:hover nav .navbar .menu-list p {
+body .nav:hover .nav .navbar .menu-list p {
   display: none;
 }
-body nav .wrap {
+body .nav .wrap {
   width: 100%;
 }
-body nav .wrap .navbar {
+body .nav .wrap .navbar {
   position: relative;
   flex-direction: column;
   align-items: flex-start;
 }
-body nav .wrap .navbar .user {
+body .nav .wrap .navbar .user {
   padding: 1rem;
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
 }
-body nav .wrap .navbar .user img {
+body .nav .wrap .navbar .user img {
   height: 50px;
   transition: 250ms ease-in-out;
 }
-body nav .wrap .navbar .user span {
+body .nav .wrap .navbar .user span {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
   transition: 250ms ease-in-out;
 }
-body nav .wrap .navbar .user p {
+body .nav .wrap .navbar .user p {
   color: #fff;
   font-size: 12px;
   transition: 250ms ease-in-out;
 }
-body nav .wrap .navbar .user .nai {
+body .nav .wrap .navbar .user .nai {
   visibility: hidden;
 }
-body nav .wrap .navbar .top-nav {
+body .nav .wrap .navbar .top-nav {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body nav .wrap .navbar .top-nav .logo {
+body .nav .wrap .navbar .top-nav .logo {
   display: flex;
   justify-content: center;
   align-content: center;
   margin-right: 130px;
   padding: 1rem;
 }
-body nav .wrap .navbar .top-nav i {
+body .nav .wrap .navbar .top-nav i {
   color: #fff;
   margin-top: 1rem;
   margin-right: 1rem;
 }
-body nav .wrap .navbar .top-nav .toggle-icon {
+body .nav .wrap .navbar .top-nav .toggle-icon {
   color: #fff;
 }
-body nav .wrap .navbar .top-nav img {
+body .nav .wrap .navbar .top-nav img {
   height: 50px;
   transition: 250ms ease-in-out;
 }
-body nav .wrap .navbar .menu-list {
+body .nav .wrap .navbar .menu-list {
   position: absolute;
   top: 25vh;
   display: flex;
@@ -233,10 +233,10 @@ body nav .wrap .navbar .menu-list {
   justify-content: center;
   width: 100%;
 }
-body nav .wrap .navbar .menu-list .active {
+body .nav .wrap .navbar .menu-list .active {
   background: #46DB6E;
 }
-body nav .wrap .navbar .menu-list a {
+body .nav .wrap .navbar .menu-list a {
   display: flex;
   justify-content: center;
   display: flex;
@@ -247,23 +247,23 @@ body nav .wrap .navbar .menu-list a {
   overflow: hidden;
   font-weight: 500;
 }
-body nav .wrap .navbar .menu-list a:hover {
+body .nav .wrap .navbar .menu-list a:hover {
   background: #46DB6E;
 }
-body nav .wrap .navbar .menu-list a i {
+body .nav .wrap .navbar .menu-list a i {
   padding: 0.7rem 0;
 }
-body nav .wrap .navbar .menu-list a p {
+body .nav .wrap .navbar .menu-list a p {
   margin-left: 1rem;
 }
-body nav .wrap .navbar .menu-list a .nai {
+body .nav .wrap .navbar .menu-list a .nai {
   display: none;
 }
-body nav .wrap .logout {
+body .nav .wrap .logout {
   position: absolute;
   margin-top: 90vh;
 }
-body nav .wrap .logout a {
+body .nav .wrap .logout a {
   display: flex;
   align-items: baseline;
   color: #fff;
@@ -273,17 +273,17 @@ body nav .wrap .logout a {
   font-size: 18px;
   transition: 250ms ease-in-out;
 }
-body nav .wrap .logout a i {
+body .nav .wrap .logout a i {
   margin-left: 1.8rem;
   padding-top: 1rem;
 }
-body nav .wrap .logout a:hover {
+body .nav .wrap .logout a:hover {
   background: #DF142D;
 }
-body nav .wrap .logout a .nai {
+body .nav .wrap .logout a .nai {
   visibility: hidden;
 }
-body nav .wrap .logout p {
+body .nav .wrap .logout p {
   margin-left: 1rem;
 }
 body .main {
@@ -418,18 +418,24 @@ body .main .container .add_book_top-nav .main_container #upload_details .input-i
 body .main .container .add_book_top-nav .main_container #upload_details .input-item button:hover {
   background-color: grey;
 }
+body .main .container .add_book_top-nav .main_container #view_materials {
+  display: none;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
 body .main .container .add_book_top-nav .main_container #view_materials::-moz-selection {
-  background: rgba(23, 162, 184, 0.3);
+  background: #34A853;
 }
 body .main .container .add_book_top-nav .main_container #view_materials::selection {
-  background: rgba(23, 162, 184, 0.3);
+  background: #34A853;
 }
 body .main .container .add_book_top-nav .main_container #view_materials .wrapper {
   max-width: 100%;
   width: 100%;
-  margin: 200px auto;
+  height: 80vh;
   padding: 25px 30px 30px 30px;
-  border-radius: 5px;
+  border-radius: 25px;
   background: #fff;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
@@ -440,10 +446,11 @@ body .main .container .add_book_top-nav .main_container #view_materials .wrapper
 }
 body .main .container .add_book_top-nav .main_container #view_materials .wrapper nav {
   position: relative;
-  width: 80%;
+  width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 body .main .container .add_book_top-nav .main_container #view_materials .wrapper nav label {
   display: block;
@@ -454,55 +461,55 @@ body .main .container .add_book_top-nav .main_container #view_materials .wrapper
   cursor: pointer;
   position: relative;
   z-index: 1;
-  color: #17a2b8;
+  color: #212121;
   font-size: 17px;
-  border-radius: 5px;
+  border-radius: 25px;
   margin: 0 5px;
   transition: all 0.3s ease;
 }
 body .main .container .add_book_top-nav .main_container #view_materials .wrapper nav label:hover {
-  background: rgba(23, 162, 184, 0.3);
+  background: rgba(104, 255, 84, 0.3);
 }
-body .main .container .add_book_top-nav .main_container #view_materials #home:checked ~ nav label.home {
+body .main .container .add_book_top-nav .main_container #view_materials #all:checked ~ nav label.home {
   color: #fff;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #home:checked ~ section .content-1 {
+body .main .container .add_book_top-nav .main_container #view_materials #all:checked ~ section .content-1 {
   display: block;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #blog:checked ~ nav label.blog {
+body .main .container .add_book_top-nav .main_container #view_materials #images:checked ~ nav label.blog {
   color: #fff;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #blog:checked ~ nav .slider {
+body .main .container .add_book_top-nav .main_container #view_materials #images:checked ~ nav .slider {
   left: 20%;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #blog:checked ~ section .content-2 {
+body .main .container .add_book_top-nav .main_container #view_materials #images:checked ~ section .content-2 {
   display: block;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #code:checked ~ nav label.code {
+body .main .container .add_book_top-nav .main_container #view_materials #doc:checked ~ nav label.code {
   color: #fff;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #code:checked ~ nav .slider {
+body .main .container .add_book_top-nav .main_container #view_materials #doc:checked ~ nav .slider {
   left: 40%;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #code:checked ~ section .content-3 {
+body .main .container .add_book_top-nav .main_container #view_materials #doc:checked ~ section .content-3 {
   display: block;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #help:checked ~ nav label.help {
+body .main .container .add_book_top-nav .main_container #view_materials #videos:checked ~ nav label.help {
   color: #fff;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #help:checked ~ nav .slider {
+body .main .container .add_book_top-nav .main_container #view_materials #videos:checked ~ nav .slider {
   left: 60%;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #help:checked ~ section .content-4 {
+body .main .container .add_book_top-nav .main_container #view_materials #videos:checked ~ section .content-4 {
   display: block;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #about:checked ~ nav label.about {
+body .main .container .add_book_top-nav .main_container #view_materials #others:checked ~ nav label.about {
   color: #fff;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #about:checked ~ nav .slider {
+body .main .container .add_book_top-nav .main_container #view_materials #others:checked ~ nav .slider {
   left: 80%;
 }
-body .main .container .add_book_top-nav .main_container #view_materials #about:checked ~ section .content-5 {
+body .main .container .add_book_top-nav .main_container #view_materials #others:checked ~ section .content-5 {
   display: block;
 }
 body .main .container .add_book_top-nav .main_container #view_materials nav label i {
@@ -515,8 +522,8 @@ body .main .container .add_book_top-nav .main_container #view_materials nav .sli
   left: 0;
   bottom: 0;
   z-index: 0;
-  border-radius: 5px;
-  background: #17a2b8;
+  border-radius: 25px;
+  background: #34A853;
   transition: all 0.3s ease;
 }
 body .main .container .add_book_top-nav .main_container #view_materials input[type=radio] {
@@ -526,13 +533,23 @@ body .main .container .add_book_top-nav .main_container #view_materials section 
   display: none;
   background: #fff;
 }
-body .main .container .add_book_top-nav .main_container #view_materials section .content .title {
-  font-size: 21px;
-  font-weight: 500;
-  margin: 30px 0 10px 0;
+body .main .container .add_book_top-nav .main_container #view_materials section .content .centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  flex-direction: column;
 }
-body .main .container .add_book_top-nav .main_container #view_materials section .content p {
+body .main .container .add_book_top-nav .main_container #view_materials section .content img {
+  width: 100px;
+}
+body .main .container .add_book_top-nav .main_container #view_materials section .content button {
+  color: #626262;
   text-align: justify;
+  background-color: #fff;
+}
+body .main .container .add_book_top-nav .main_container #view_materials section .content input[type=file] {
+  display: none;
 }
 body .main .container .add_book_top-nav {
   background-color: #F5F5F5;

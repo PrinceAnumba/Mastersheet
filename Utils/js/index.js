@@ -19,42 +19,42 @@ function drop() {
 
 // Sise Bar Mechanics
 
-$("nav").hover(function() {
+$(".nav").hover(function() {
   $(".profile_image").attr("src","../../Utils/images/MASTERSHEET-White 1.png");
   $("body .left-gap").css("width","23%");
-  $("body nav").css("left","0px");
-  $("nav .wrap .navbar .top-nav .logo").css("margin-right","0px");
-  $("nav .wrap .navbar .user").css("width","100%");
-  $("nav .wrap .navbar .user img").css("width","50px");
-  $("nav .wrap .navbar .user").css("align-items","center");
-  $("nav .navbar .top-nav img").css("height","25px");
-  $("nav .navbar .user img").addClass("text-center");
-  $("nav .navbar .menu-list a p").show();
-  $("nav .navbar .menu-list a").css("justify-content","left");
-  $("nav .navbar .menu-list a i").css("padding-left","1rem");
-  $("nav .navbar .menu-list a i").css("padding-top","0rem");
-  $("nav .navbar .menu-list a i").css("padding-bottom","0rem");
-  $("nav .wrap .navbar .user .name").removeClass("nai");
-  $("nav .wrap .navbar .user .position").removeClass("nai");
-  $("nav .logout a p").removeClass("nai");
+  $("body .nav").css("left","0px");
+  $(".nav .wrap .navbar .top-nav .logo").css("margin-right","0px");
+  $(".nav .wrap .navbar .user").css("width","100%");
+  $(".nav .wrap .navbar .user img").css("width","50px");
+  $(".nav .wrap .navbar .user").css("align-items","center");
+  $(".nav .navbar .top-nav img").css("height","25px");
+  $(".nav .navbar .user img").addClass("text-center");
+  $(".nav .navbar .menu-list a p").show();
+  $(".nav .navbar .menu-list a").css("justify-content","left");
+  $(".nav .navbar .menu-list a i").css("padding-left","1rem");
+  $(".nav .navbar .menu-list a i").css("padding-top","0rem");
+  $(".nav .navbar .menu-list a i").css("padding-bottom","0rem");
+  $(".nav .wrap .navbar .user .name").removeClass("nai");
+  $(".nav .wrap .navbar .user .position").removeClass("nai");
+  $(".nav .logout a p").removeClass("nai");
 });
 
 
-$("nav").mouseleave(function() {
+$(".nav").mouseleave(function() {
   $(".profile_image").attr("src","../../Utils/images/MASTERSHEET ROUND 1.png");
   $("body .left-gap").css("width","180px");
-  $("body nav").css("left","60px");
-  $("nav .wrap .navbar .top-nav .logo").css("margin-right","130px");
-  $("nav .navbar .top-nav img").css("height","50px");
-  $("nav .navbar .user img").css("height","50px");
-  $("nav .navbar .menu-list a p").hide();
-  $("nav .navbar .menu-list a i").css("padding-left","0");
-  $("nav .navbar .menu-list a").css("justify-content","center");
-  $("nav .navbar .menu-list a i").css("padding-top","0.7rem");
-  $("nav .navbar .menu-list a i").css("padding-bottom","0.7rem");
-  $("nav .logout a p").addClass("nai");
-  $("nav .wrap .navbar .user .name").addClass("nai");
-  $("nav .wrap .navbar .user .position").addClass("nai");
+  $("body .nav").css("left","60px");
+  $(".nav .wrap .navbar .top-nav .logo").css("margin-right","130px");
+  $(".nav .navbar .top-nav img").css("height","50px");
+  $(".nav .navbar .user img").css("height","50px");
+  $(".nav .navbar .menu-list a p").hide();
+  $(".nav .navbar .menu-list a i").css("padding-left","0");
+  $(".nav .navbar .menu-list a").css("justify-content","center");
+  $(".nav .navbar .menu-list a i").css("padding-top","0.7rem");
+  $(".nav .navbar .menu-list a i").css("padding-bottom","0.7rem");
+  $(".nav .logout a p").addClass("nai");
+  $(".nav .wrap .navbar .user .name").addClass("nai");
+  $(".nav .wrap .navbar .user .position").addClass("nai");
 });
 
 
@@ -65,5 +65,17 @@ $("nav").mouseleave(function() {
 $(".Upload_course_1").on("click", function(){ 
   $("#upload_details").css("display","flex");
   $(".back-arrow").css("display","block");
+   
+ });
+
+$(".upload-file").on("click", function(){ 
+  $("#view_materials").css("display","flex");
+  $(".back-arrow").css("display","block");
+  $("#upload_details").css("display","none");
+   
+ });
+
+$(".upload-item").on("click", function(){ 
+  uploadFile();
    
  });
