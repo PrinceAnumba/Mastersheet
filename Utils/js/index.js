@@ -79,3 +79,6 @@ $(".upload-item").on("click", function(){
   uploadFile();
    
  });
+
+//  LOADIND SCREEN SCRIPT
+
