@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="../../Utils/css/index.css">
     <link rel="icon" type="image/png" sizes="16x16" href="../../Utils/images/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -37,20 +37,37 @@
             <div class="bottom">
                 <form action="#">
                     <div class="input">
-                        <input type="email" name="email" id="email">
-                        <input type="password" name="pass" id="pass">
+                        <input type="email" name="email" id="email" placeholder="Email ,phone & First name">
+                        <input type="password" name="pass" id="password" placeholder="Password">
+                        <i  class="fa-sharp fa-solid fa-eye-slash" id="eyeIcon" style="margin-left: 320px; margin-top: 20px ; cursor: pointer; position: absolute;"></i>
                         <p ><a class="danger" href="#">Forgot Password?</a></p>
                     </div>
                     <div class="action">
                         <a href="#"><div class="login">Login</div></a>
                     </div>
                 </form>
-                <p>Don't have an account? <span ><a class="danger" href="#">Signup now</a></span></p>
+                <p>Don't have an account? <span ><a class="danger" href="./signup1.html">Signup now</a></span></p>
             </div>
         </div>
 
         
     </div>
+
+    <script>
+        let eyeIcon = document.getElementById("eyeIcon");
+        let password = document.getElementById("password");
+
+        eyeIcon.onclick = function () {
+            if ( password.type == "password") {
+                password.type = "text";
+                eyeIcon.className = "fa-sharp fa-solid fa-eye";
+            }else {
+                password.type = "password";
+                eyeIcon.className = "fa-sharp fa-solid fa-eye-slash";
+            }
+        }
+
+    </script>
 </body>
 
 </html>
