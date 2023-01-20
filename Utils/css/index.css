@@ -39,6 +39,15 @@
     font-family: var(--Outfit-font);
 }
 
+input {
+    width: 382px;
+    height: 3rem;
+    border-radius: var(--btn-border-radius);
+    border: 1px solid var(--color-primary);
+    transition: all 300ms ease;
+    padding-left: 1.5rem;
+}
+
 
 /* LOADING ANIMATION */
 
@@ -238,15 +247,6 @@ p {
     gap: 0.5rem;
 }
 
-.login_screen .login_container .bottom .input input{
-    width: 382px;
-    height: 3rem;
-    border-radius: var(--btn-border-radius);
-    border: 1px solid var(--color-primary);
-    transition: all 300ms ease;
-    padding-left: 1.5rem;
-}
-
 
 .login_screen .login_container .bottom .action .login {
     background: var(--color-primary);
@@ -309,9 +309,12 @@ p {
     transition: all 300ms ease;
 }
 
-.login_screen .login_container .signup-bottom a:hover .btn{
+.login_screen .login_container .signup-bottom a .btn:hover{
     margin-left: 1rem;
     background: #ff7782;
+}
+.login_screen .login_container .signup-bottom a{
+    width: 441px;
 }
 
 .login_screen .signup_bg {
@@ -319,4 +322,32 @@ p {
     z-index: -3;
     height: 100vh;
     margin-left: 10rem;
+}
+
+/* ====== FORGOT PASSWORD STYLES ===== */
+
+.login_screen .login_container .pass-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.login_screen .login_container .pass-bottom form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.login_screen .login_container .pass-bottom form .next{
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.8rem 10.5rem;
+    border-radius: var(--btn-border-radius);
+    transition: all 300ms ease;
+}
+
+.login_screen .login_container .pass-bottom form .next:hover{
+    background: var(--color-success);
 }
