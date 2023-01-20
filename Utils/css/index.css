@@ -286,3 +286,37 @@ p {
     margin-left: 3.3rem;
     width: 400px;
 }
+
+
+/* ======== SIGNUP SCREEN STYLES ======== */
+
+.login_screen .login_container .signup-bottom {
+    display: flex;
+    flex-direction: column;
+    margin-left: 13.5rem;
+    gap: 1.2rem;
+    transition: all 300ms ease-in;
+}
+
+.login_screen .login_container .signup-bottom a>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 441px;
+    height: 50px;
+    background: #515151;
+    color: var(--color-white);
+    transition: all 300ms ease;
+}
+
+.login_screen .login_container .signup-bottom a:hover .btn{
+    margin-left: 1rem;
+    background: #ff7782;
+}
+
+.login_screen .signup_bg {
+    position: absolute;
+    z-index: -3;
+    height: 100vh;
+    margin-left: 10rem;
+}
