@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP</title>
+    <link rel="stylesheet" href="../../Utils/css/index.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../Utils/images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/11037d18f8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="otp_screen">
+        <img class="otp_bg" src="../../Utils/images/Ellipse_grey.png" alt="">
+        <div class="otp_container">
+            <div class="form">
+                <p>We’ve just sent you a verification code to your school email, type it in the box bellow</p>
+                
+                <form action="#">
+                    <input type="number" name="" id="" >
+                    <input type="number" name="" id="" disabled>
+                    <input type="number" name="" id="" disabled>
+                    <input type="number" name="" id="" disabled>
+                    <input type="number" name="" id="" disabled>
+                    <input type="number" name="" id="" disabled>
+                </form>
+                <div class="action">
+                    <a href="./success.html">
+                        <div class="btn">Verify</div>
+                    </a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const inputs = document.querySelectorAll("input"),
+            button = document.querySelector(".btn");
+
+        // iterate over all inputs
+        inputs.forEach((input, index1) => {
+            input.addEventListener("keyup", (e) => {
+                // This code gets the current input element and stores it in the currentInput variable
+                // This code gets the next sibling element of the current input element and stores it in the nextInput variable
+                // This code gets the previous sibling element of the current input element and stores it in the prevInput variable
+                const currentInput = input,
+                    nextInput = input.nextElementSibling,
+                    prevInput = input.previousElementSibling;
+
+                // if the value has more than one character then clear it
+                if (currentInput.value.length > 1) {
+                    currentInput.value = "";
+                    return;
+                }
+                // if the next input is disabled and the current value is not empty
+                //  enable the next input and focus on it
+                if (nextInput && nextInput.hasAttribute("disabled") && currentInput.value !== "") {
+                    nextInput.removeAttribute("disabled");
+                    nextInput.focus();
+                }
+
+                // if the backspace key is pressed
+                if (e.key === "Backspace") {
+                    // iterate over all inputs again
+                    inputs.forEach((input, index2) => {
+                        // if the index1 of the current input is less than or equal to the index2 of the input in the outer loop
+                        // and the previous element exists, set the disabled attribute on the input and focus on the previous element
+                        if (index1 <= index2 && prevInput) {
+                            input.setAttribute("disabled", true);
+                            input.value = "";
+                            prevInput.focus();
+                        }
+                    });
+                }
+                //if the fourth input( which index number is 3) is not empty and has not disable attribute then
+                //add active class if not then remove the active class.
+                if (!inputs[3].disabled && inputs[3].value !== "") {
+                    button.classList.add("active");
+                    return;
+                }
+                button.classList.remove("active");
+            });
+        });
+
+        //focus the first input which index is 0 on window load
+        window.addEventListener("load", () => inputs[0].focus());
+    </script>
+
+</body>
+
+</html>

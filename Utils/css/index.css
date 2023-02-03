@@ -4,6 +4,7 @@
 
 :root {
     --color-primary: #34A853;
+    --color-primary-light: #BEFFD0;
     --color-white: #fff;
     --color-light: #e0e0e0;
     --body-text-color: #212121;
@@ -384,18 +385,21 @@ p {
     gap: 0.7rem;
 }
 
-.login_screen .school_signup_container .action button{
+.login_screen .school_signup_container .action .btn{
     background: var(--color-primary);
     color: var(--color-white);
-    padding: 0.8rem 10.5rem;
+    padding: 0.8rem 0;
+    width: 382px;
     border-radius: var(--btn-border-radius);
     transition: all 300ms ease;
     border: none;
     margin-top: 2rem;
     margin-left: 13rem;
+    display: flex;
+    justify-content: center;
 }
 
-.login_screen .school_signup_container .action button:hover{
+.login_screen .school_signup_container .action .btn:hover{
     background: var(--color-success);
 }
 .login_screen .school_signup_container .action p{
@@ -441,4 +445,138 @@ p {
 .login_screen .school_signup_container .top p {
     margin-left: 3.3rem;
     width: 400px;
+}
+
+
+
+/* =========== OTP STYLES ========== */
+.otp_screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otp_screen .otp_bg {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+.otp_screen .otp_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.otp_screen .otp_container .form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.otp_screen .otp_container .form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.otp_screen .otp_container .form form input {
+    width: 42px;
+    height: 45px;
+    padding-left: 1rem;
+    font-size: 1.125rem;
+}
+
+.otp_screen .otp_container .form form input::-webkit-inner-spin-button, .otp_screen .otp_container .form form input::-webkit-outer-spin-button {
+    display: none;
+}
+
+.otp_screen .otp_container .form .action .btn {
+    background: var(--color-success);
+    color: var(--color-white);
+    padding: 0.8rem 0;
+    width: 382px;
+    border-radius: var(--btn-border-radius);
+    transition: all 300ms ease;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.otp_screen .otp_container .form .action .active {
+    background: var(--color-primary);
+    
+}
+
+.otp_screen .otp_container .form .action .btn:hover {
+    background: var(--color-primary);
+}
+
+.otp_screen .otp_container .form .action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ======== SUCCESS STYLES ========= */
+.success_screen {
+    height: 100vh;
+    
+}
+
+.success_screen .success_bg {
+    height: 100vh;
+    position: absolute;
+    right: 0;
+}
+
+.success_screen .success_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.success_screen .success_container .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.success_screen .success_container .form .check-mark{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.success_screen .success_container .form .check-mark i{
+    font-size: 30px;
+}
+
+.success_screen .success_container .form .action .btn {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.8rem 0;
+    width: 382px;
+    border-radius: var(--btn-border-radius);
+    transition: all 300ms ease;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
 }
