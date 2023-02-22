@@ -629,6 +629,160 @@ body .main .container .report_card_year_top-nav .report_card_students_header .ic
   color: #34A853;
   font-size: 20px;
 }
+body .main .container .report_card_year_top-nav .report_card_student_details_body {
+  margin-top: 2rem;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .date {
+  color: #222A49;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .class {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .class h1 {
+  font-size: 36px;
+  color: #222A49;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .class span {
+  font-size: 24px;
+  color: #596181;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 20px;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .header .school-logo img {
+  width: 133px;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .header .school-info .school-name {
+  color: #34A853;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .header .school-info .address {
+  font-size: 25px;
+  width: 500px;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .underline {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .underline hr {
+  border-top: 3px solid #2EB358;
+  width: 100%;
+  margin: 0;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .underline .yearly {
+  color: #2EB358;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .student-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .student-profile .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .student-profile .profile .name .student-class {
+  color: #737373;
+  font-size: 20px;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .student-profile .gender {
+  color: #737373;
+  font-size: 25px;
+}
+body .main .container .report_card_year_top-nav {
+  background-color: #F5F5F5;
+  margin: 2rem 0 0 1rem;
+  padding: 2rem 2rem;
+}
+body .main .container .report_card_year_top-nav .report_card_students_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .container .report_card_year_top-nav .report_card_students_header .left {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+body .main .container .report_card_year_top-nav .report_card_students_header .left a .back-arrow {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+body .main .container .report_card_year_top-nav .report_card_students_header .left a .back-arrow i {
+  position: relative;
+  top: 9%;
+  left: 30%;
+  color: #515151;
+}
+body .main .container .report_card_year_top-nav .report_card_students_header .left h2 {
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+  font-weight: 750;
+  color: #222A49;
+}
+body .main .container .report_card_year_top-nav .report_card_students_header .icons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+body .main .container .report_card_year_top-nav .report_card_students_header .icons .search {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+}
+body .main .container .report_card_year_top-nav .report_card_students_header .icons .search i {
+  margin: 0 1rem;
+  color: #34A853;
+}
+body .main .container .report_card_year_top-nav .report_card_students_header .icons .notification {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .container .report_card_year_top-nav .report_card_students_header .icons .notification i {
+  color: #34A853;
+  font-size: 20px;
+}
+body .main .container .report_card_year_top-nav .report_card_students_header .icons .setting {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .main .container .report_card_year_top-nav .report_card_students_header .icons .setting i {
+  color: #34A853;
+  font-size: 20px;
+}
 body .main .container .report_card_year_top-nav .report_card_students_body {
   margin-top: 2rem;
 }
@@ -663,22 +817,26 @@ body .main .container .report_card_year_top-nav .report_card_students_body .tabl
   flex-direction: column;
   align-items: center;
 }
-body .main .container .report_card_year_top-nav .report_card_students_body .table .row .content {
+body .main .container .report_card_year_top-nav .report_card_students_body .table .row a {
+  text-decoration: none;
+  color: #121212;
+}
+body .main .container .report_card_year_top-nav .report_card_students_body .table .row a .content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-body .main .container .report_card_year_top-nav .report_card_students_body .table .row .content .name {
+body .main .container .report_card_year_top-nav .report_card_students_body .table .row a .content .name {
   font-size: 20px;
   font-weight: 500;
 }
-body .main .container .report_card_year_top-nav .report_card_students_body .table .row .content .student_ID {
+body .main .container .report_card_year_top-nav .report_card_students_body .table .row a .content .student_ID {
   font-size: 14px;
   font-weight: 400;
   color: #596181;
 }
-body .main .container .report_card_year_top-nav .report_card_students_body .table .row .content .gender {
+body .main .container .report_card_year_top-nav .report_card_students_body .table .row a .content .gender {
   font-weight: 500;
   color: #34A853;
 }
