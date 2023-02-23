@@ -706,6 +706,115 @@ body .main .container .report_card_year_top-nav .report_card_student_details_bod
   color: #737373;
   font-size: 25px;
 }
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .student-info {
+  margin-top: 4rem;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .student-info .info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .student-info .info-item p {
+  color: #757575;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .student-info hr {
+  border-top: 3px solid #2EB358;
+  width: 100%;
+  margin: 0;
+  padding: 1re;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .attendance {
+  margin-top: 4rem;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .attendance .header {
+  display: inline;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .attendance .header ul {
+  list-style-type: disc;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .attendance .header ul li {
+  color: #34A853;
+  font-size: 25px;
+  font-weight: 500;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .attendance .header hr {
+  border-top: 3px solid #2EB358;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .attendance .term {
+  margin-top: 1rem;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .attendance .term .summary {
+  background: #E9E9E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 5px;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .attendance .term .summary h4 {
+  color: #34A853;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .attendance .term .summary p {
+  color: #34A853;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .academic-performance {
+  margin-top: 4rem;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .academic-performance .header {
+  display: inline;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .academic-performance .header ul {
+  list-style-type: disc;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .academic-performance .header ul li {
+  color: #34A853;
+  font-size: 25px;
+  font-weight: 500;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .academic-performance .header hr {
+  border-top: 3px solid #2EB358;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .academic-performance .term {
+  margin-top: 1rem;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .academic-performance .term table {
+  background: #EEEEEE;
+  width: 100%;
+  padding: 2rem;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .academic-performance .term table tr .subjects {
+  color: #34A853;
+  font-weight: 500;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .academic-performance .term table tr .total {
+  font-weight: 600;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .academic-performance .term table tr th {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 1rem;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .academic-performance .term table tr .highlighted {
+  background: #DADADA;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .academic-performance .term table tr td {
+  padding: 1rem;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .academic-performance .term table tr .gpa {
+  background: #fff;
+  color: #FF1D54;
+  font-weight: 600;
+}
 body .main .container .report_card_year_top-nav {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;

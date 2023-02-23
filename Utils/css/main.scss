@@ -790,6 +790,144 @@ body {
                                     font-size: 25px;
                                 }
                             }
+                            .student-info {
+                                margin-top: 4rem;
+
+                                .info-item {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    gap: 1rem;
+
+                                    p {
+                                        color: #757575;
+                                        font-size: 20px;
+                                        margin-bottom: 0;
+                                    }
+                                }
+
+                                hr {
+                                    border-top: 3px solid #2EB358;
+                                    width: 100%;
+                                    margin: 0;
+                                    padding: 1re,;
+                                    
+                                }
+                            }
+
+                            .attendance {
+                                margin-top: 4rem;
+
+                                .header {
+                                    display: inline;
+                                    ul {
+                                        list-style-type: disc;
+                                        
+                                        li {
+                                            color: $green-button;
+                                            font-size: 25px;
+                                            font-weight: 500;
+                                        }
+                                    }
+
+                                    hr {
+                                        border-top: 3px solid #2EB358;
+                                        width: 100%;
+                                        margin: 0;
+                                        padding: 1rem;
+                                        
+                                    }
+                                }
+
+                                .term {
+                                    margin-top: 1rem;
+
+                                    .summary {
+                                        background: #E9E9E9;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-direction: column;
+                                        padding: 2rem;
+                                        border-radius: 5px;
+
+                                        h4 {
+                                            color: $green-button;
+                                        }
+                                        p {
+                                            color: $green-button;
+                                        }
+                                    }
+                                }
+                            }
+                            .academic-performance {
+                                margin-top: 4rem;
+
+                                .header {
+                                    display: inline;
+                                    ul {
+                                        list-style-type: disc;
+                                        
+                                        li {
+                                            color: $green-button;
+                                            font-size: 25px;
+                                            font-weight: 500;
+                                        }
+                                    }
+
+                                    hr {
+                                        border-top: 3px solid #2EB358;
+                                        width: 100%;
+                                        margin: 0;
+                                        padding: 1rem;
+                                        
+                                    }
+                                }
+
+                                .term {
+                                    margin-top: 1rem;
+
+                                    table {
+                                        background: #EEEEEE;
+                                        width: 100%;
+                                        padding: 2rem;
+
+                                        tr {
+                                            .subjects {
+                                                color: $green-button;
+                                                font-weight: 500;
+                                            }
+
+                                            .total {
+                                                font-weight: 600;
+                                            }
+                                            th {
+                                                font-size: 20px;
+                                                font-weight: 500;
+                                                padding: 1rem;
+                                            }
+
+                                            .highlighted {
+                                                background: #DADADA;
+                                            }
+                                            
+                                            td {
+                                                padding: 1rem;                                     
+                                                
+                                                
+                                            }
+
+                                            .gpa {
+                                                background: #fff;
+                                                color: #FF1D54;
+                                                font-weight: 600;
+                                            }
+                                            
+                                        }
+                                    }
+                                    
+                                }
+                            }
                         }
                     }
                 }
