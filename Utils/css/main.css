@@ -557,6 +557,11 @@ body .main .container .report_card_year_top-nav {
   margin: 2rem 0 0 1rem;
   padding: 2rem 2rem;
 }
+body .main .container .report_card_year_top-nav {
+  background-color: #F5F5F5;
+  margin: 2rem 0 0 1rem;
+  padding: 2rem 2rem;
+}
 body .main .container .report_card_year_top-nav .report_card_students_header {
   display: flex;
   justify-content: space-between;
