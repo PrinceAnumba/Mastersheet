@@ -595,10 +595,9 @@ body {
 
                     }
                 }
-        
-        
-        
             }
+
+
             // report card students details
             .report_card_year_top-nav {
                 background-color: #F5F5F5;
@@ -926,6 +925,48 @@ body {
                                         }
                                     }
                                     
+                                }
+                            }
+                            .totals {
+                                ul{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    padding: 7rem 5rem 4rem 5rem;
+                                    
+                                    li{
+                                        font-size: 30px;
+                                        font-weight: 500;
+                                        list-style: disc;
+
+                                        .value {
+                                            color: $red;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                            }
+                            .teachers-remark {
+                                h3 {
+                                    color: #074919;
+                                    text-decoration: underline;
+                                }
+
+                                .remark {
+                                    background: #D4FFEA;
+                                    border-radius: 5px;
+                                    padding: 3rem;
+                                    min-height: 20rem;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+
+                                    .signature {
+                                        position: relative;
+                                        right: 0;
+                                        color: #404040;
+                                        font-weight: 600;
+                                    }
                                 }
                             }
                         }

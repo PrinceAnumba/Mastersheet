@@ -815,6 +815,40 @@ body .main .container .report_card_year_top-nav .report_card_student_details_bod
   color: #FF1D54;
   font-weight: 600;
 }
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .totals ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7rem 5rem 4rem 5rem;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .totals ul li {
+  font-size: 30px;
+  font-weight: 500;
+  list-style: disc;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .totals ul li .value {
+  color: #DF142D;
+  text-decoration: underline;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .teachers-remark h3 {
+  color: #074919;
+  text-decoration: underline;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .teachers-remark .remark {
+  background: #D4FFEA;
+  border-radius: 5px;
+  padding: 3rem;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .main .container .report_card_year_top-nav .report_card_student_details_body .table .content .teachers-remark .remark .signature {
+  position: relative;
+  right: 0;
+  color: #404040;
+  font-weight: 600;
+}
 body .main .container .report_card_year_top-nav {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
