@@ -552,10 +552,48 @@ body .main .container .add_book_top-nav .main_container #view_materials section 
 body .main .container .add_book_top-nav .main_container #view_materials section .content input[type=file] {
   display: none;
 }
-body .main .container .report_card_year_top-nav {
+body .main .container .users {
   background-color: #F5F5F5;
   margin: 2rem 0 0 1rem;
-  padding: 2rem 2rem;
+  padding: 2rem 0rem;
+}
+body .main .container .users .top-nav {
+  width: 100%;
+  padding-bottom: 1rem;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.06);
+  -webkit-backdrop-filter: blur(27.1828px);
+          backdrop-filter: blur(27.1828px);
+}
+body .main .container .users .top-nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+body .main .container .users .top-nav ul li {
+  background: #DDDCDC;
+  padding: 1rem 3rem;
+  transition: 300ms all ease;
+}
+body .main .container .users .top-nav ul li:hover {
+  background: #191D23;
+  color: #fff;
+  cursor: pointer;
+}
+body .main .container .users .action {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+body .main .container .users .action .search {
+  background-color: #F3FFF6;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+}
+body .main .container .users .action .search input {
+  background-color: #F3FFF6;
+}
+body .main .container .users .action .search i {
+  margin: 0 1rem;
+  color: #34A853;
 }
 body .main .container .report_card_year_top-nav {
   background-color: #F5F5F5;

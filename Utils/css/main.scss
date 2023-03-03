@@ -597,12 +597,59 @@ body {
                 }
             }
             // Users
-            .report_card_year_top-nav {
+            .users {
                 background-color: #F5F5F5;
                 margin: 2rem 0 0 1rem;
-                padding: 2rem 2rem;
-        
+                padding: 2rem 0rem;
                 
+                .top-nav {
+                    width: 100%;
+                    padding-bottom: 1rem;
+                    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.06);
+                    backdrop-filter: blur(27.1828px);
+
+
+                    ul {
+                        display: flex;
+                        justify-content: space-around;
+
+                        li {
+                            background: #DDDCDC;
+                            padding: 1rem 3rem;
+                            transition: 300ms all ease;
+
+                            &:hover {
+                                background: #191D23;
+                                color: #fff;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .action {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 2rem;
+
+                    .search {
+                        background-color: #F3FFF6;
+                        border-radius: 20px;
+                        padding: 0.6rem 1rem;
+                        // Continue here( Change paddingtop)
+
+                        input {
+                            background-color: #F3FFF6;
+                        }
+        
+                        i {
+                            margin: 0 1rem;
+                            color: $green-button;
+                        }
+                        
+                    }
+                }
+
         
                 
             }
