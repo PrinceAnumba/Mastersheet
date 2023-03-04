@@ -582,18 +582,99 @@ body .main .container .users .action {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+  padding: 0 2rem;
 }
 body .main .container .users .action .search {
   background-color: #F3FFF6;
   border-radius: 20px;
-  padding: 0.6rem 1rem;
+  display: flex;
 }
 body .main .container .users .action .search input {
   background-color: #F3FFF6;
+  border-radius: 20px;
 }
 body .main .container .users .action .search i {
   margin: 0 1rem;
   color: #34A853;
+  display: flex;
+  align-self: center;
+}
+body .main .container .users .action .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+body .main .container .users .action .right .btn {
+  background: #34A853;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 35px;
+}
+body .main .container .users .action .right .btn-outline {
+  border: 2px solid #34A853;
+  background: transparent;
+  padding: 1rem;
+  border-radius: 35px;
+  color: #34A853;
+}
+body .main .container .users .content {
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+body .main .container .users .content #teachers {
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: grid;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+body .main .container .users .content #teachers .profile-card {
+  background: #fff;
+  border-radius: 15px;
+  position: relative;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+}
+body .main .container .users .content #teachers .profile-card i.fa-ellipsis {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 20px;
+}
+body .main .container .users .content #teachers .profile-card .ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+body .main .container .users .content #teachers .profile-card .ctas div {
+  background: #34A853;
+  color: #fff;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms all ease;
+}
+body .main .container .users .content #teachers .profile-card .ctas div:hover {
+  background: #46db6e;
+}
+body .main .container .users .content #teachers .profile-card .subjects {
+  color: #A098AE;
+}
+body .main .container .users .content #teachers .profile-card .names h3 {
+  font-weight: 700;
+  color: #282E44;
 }
 body .main .container .report_card_year_top-nav {
   background-color: #F5F5F5;
